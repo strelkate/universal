@@ -1,0 +1,206 @@
+.navbar
+  padding-top: 15px
+  padding-bottom: 15px
+  background-color: $dark
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__menu-button
+      display: none
+
+  &-menu
+    width: 540px
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    padding: 0
+
+    &__link
+      text-decoration: none
+      color: $light
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+
+.logo
+  width: 163px
+
+.button-feedback
+  padding: 10px 62px
+  background-color: #656B70
+  border-radius: 10px
+  color: $light
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  text-transform: uppercase
+  border: none
+  cursor: pointer
+  outline: none
+
+.main-screen
+  background-color: $dark
+  height: 475px
+  z-index: -10
+  position: relative
+  padding-top: 30px
+  margin-bottom: 155px
+
+  &-card
+    position: relative
+    max-width: 1140px
+    height: 570px
+    display: flex
+    justify-content: space-between
+    margin-bottom: 30px
+
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+      z-index: -1
+      border-radius: 10px
+
+  &__left
+    width: 877px
+  //height: 570px
+
+  &__photo
+    //height: 100%
+    position: absolute
+    z-index: -2
+    border-radius: 10px 0 0 10px
+    object-fit: contain
+
+
+  &__wrapper
+    padding-top: 55px
+    margin-left: 55px
+
+  &__subtitle
+    font-style: normal
+    font-weight: 900
+    font-size: 12px
+    line-height: 15px
+    color: $primary
+    text-transform: uppercase
+    margin-bottom: 20px
+
+  &__title
+    font-family: 'Roboto Slab', sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    color: $light
+    margin-top: auto
+    margin-bottom: 50px
+
+  &__button
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+  &__author
+    width: 137px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 145px
+
+    &__image
+      width: 45px
+      height: 45px
+      border-radius: 50%
+
+    &__about
+      display: flex
+      flex-direction: column
+
+    &__name
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      opacity: 0.85
+      margin-bottom: 2px
+
+    &__position
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      opacity: 0.4
+
+  &__tabs
+    background-color: $light
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 263px
+    border-radius: 0 10px 10px 0
+
+
+    &__title
+      padding: 20px 0 19px 25px
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      text-transform: uppercase
+
+  &__tab
+    &__line
+      width: 263px
+      height: 1px
+      background-color: #D9DADB
+
+    &__text
+      padding: 17px 0 0 25px
+      height: 99px
+
+    &__title
+      font-style: normal
+      font-weight: 900
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      margin-bottom: 8px
+
+      &-1
+        color: #3BBDC4
+
+      &-2
+        color: #6E99AE
+
+      &-3
+        color: #AC8EE3
+
+      &-4
+        color: #FFA34D
+
+      &-5
+        color: #3DC47E
+
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+
+
+
