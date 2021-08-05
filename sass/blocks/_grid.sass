@@ -2,9 +2,9 @@
   &-wrapper
     display: grid
     grid-template-columns: repeat(4, 1fr)
-    grid-template-rows: repeat(4, 1fr)
+    grid-template-rows: repeat(4, auto)
     grid-gap: 30px
-    height: 770px
+    //height: 770px
     margin-bottom: 60px
 
   &__card
@@ -24,6 +24,9 @@
     &-1
       grid-row: 1 / 3
       grid-column: span 2
+      display: flex
+      flex-direction: column
+      justify-content: space-evenly
 
     &-2
       grid-row: 1 / 3
@@ -32,6 +35,7 @@
       position: relative
       padding: 19px 25px 25px 25px
       z-index: -10
+      justify-content: space-between
 
       &:before
         content: ''
@@ -67,7 +71,9 @@
       grid-row: 1 / 2
       background-color: #3BBDC4
       position: relative
-      &:before
+      z-index: 1
+
+      &:after
         content: ''
         position: absolute
         width: 56px
@@ -76,13 +82,14 @@
         top: 24px
         background-image: url("../img/file.svg")
         background-repeat: no-repeat
+        z-index: -1
 
     &-tag
       grid-row: 2 / 4
 
     &-social-network
       grid-row: 4 / 5
-      padding: 30px 35px 0 35px
+      padding: 30px 35px 30px 35px
       display: flex
       flex-direction: column
       align-items: center
@@ -92,6 +99,10 @@
     font-weight: normal
     font-size: 14px
     line-height: 20px
+    margin-bottom: 10px
+    &-1
+      padding-right: 10px
+
 
   &__title
     font-family: "Roboto Slab", sans-serif
@@ -103,13 +114,12 @@
       font-size: 25px
       line-height: 30px
       margin: 0 0 25px 0
-
+      padding-right: 10px
     &-2
       text-transform: uppercase
       color: $light
       font-size: 16px
       line-height: 25px
-      margin-bottom: 27px
 
     &-3
       font-size: 16px
@@ -189,14 +199,16 @@
       border-radius: 10px 10px 0 0
 
   &__bottom
+
     &-1
-      padding: 12px 0 12px 35px
+      padding: 12px 10px 12px 35px
       display: flex
       align-items: center
 
     &-2
       display: flex
       align-items: center
+      bottom: 0
 
       &-text
         display: flex
@@ -211,12 +223,14 @@
         font-weight: normal
         font-size: 12px
         line-height: 15px
+
     &-download
       display: flex
       align-items: center
       padding: 14px 0 14px 0
       margin-left: auto
       margin-right: auto
+
   &__avatar
     &-1
       border-radius: 50%
@@ -289,6 +303,7 @@
       line-height: 20px
       color: $text-color
       margin-right: 15px
+
     &-download
       font-style: normal
       font-weight: 900
@@ -299,15 +314,19 @@
   &__line
     width: 100%
     height: 1px
-    background-color: #D9DADB
+    background-color: $line
+
     &-download
       background-color: #96E2E3
       opacity: 0.75
 
-  &__content-1
-    padding: 0 0 0 35px
-    display: flex
-
+  &__content
+    &-1
+      padding: 0 0 0 35px
+      display: flex
+    &-2
+      display: flex
+      flex-direction: column
   &__icon
     &-comment
       margin-right: 5px
@@ -327,6 +346,7 @@
       display: flex
       justify-content: space-between
       width: 100%
+
     &-download
       width: 17px
       height: 17px
@@ -350,7 +370,7 @@
   &__tags
     display: flex
     flex-wrap: wrap
-    padding: 25px 25px 30px 25px
+    padding: 25px 15px 15px 25px
 
     &-item
       font-style: normal
@@ -359,11 +379,10 @@
       line-height: 20px
       color: $dark
       padding: 5px 15px
-      border: 1px solid #D9DADB
+      border: 1px solid $line
       border-radius: 5px
       margin-right: 10px
       margin-bottom: 15px
-
 
 
 

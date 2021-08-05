@@ -70,8 +70,10 @@
   &__left
     display: none
     width: 877px
+
     &-active
       display: block
+
       &:before
         content: ''
         position: absolute
@@ -187,13 +189,14 @@
 
   &__tab
     cursor: pointer
+
     &-active
       background-color: #F5F5F5
 
     &__line
-      width: 263px
+      width: 100%
       height: 1px
-      background-color: #D9DADB
+      background-color: $line
 
     &__text
       padding: 17px 25px 19px 25px
