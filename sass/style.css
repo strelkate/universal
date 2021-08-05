@@ -423,10 +423,10 @@ template {
 
 .main-screen {
   background-color: #262D33;
-  height: 475px;
+  height: 550px;
   z-index: -10;
-  padding-top: 94px;
-  margin-bottom: 220px;
+  padding-top: 105px;
+  margin-bottom: 155px;
 }
 .main-screen-card {
   position: relative;
@@ -478,6 +478,7 @@ template {
   height: 570px;
 }
 .main-screen__subtitle {
+  display: inline-block;
   font-style: normal;
   font-weight: 900;
   font-size: 12px;
@@ -494,13 +495,14 @@ template {
   font-size: 40px;
   line-height: 50px;
   color: #ffffff;
-  margin-top: auto;
-  margin-bottom: 50px;
+  margin: 0 0 47px 0;
+  padding: 0;
 }
 .main-screen__button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 22px 10px 20px;
 }
 .main-screen__author {
   display: flex;
@@ -536,9 +538,6 @@ template {
 }
 .main-screen__right {
   background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   border-radius: 0 10px 10px 0;
   width: 263px;
 }
@@ -655,7 +654,7 @@ template {
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(4, 170px);
   grid-gap: 30px;
   margin-bottom: 60px;
 }
@@ -676,9 +675,6 @@ template {
 .grid__card-1 {
   grid-row: 1/3;
   grid-column: span 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 .grid__card-2 {
   grid-row: 1/3;
@@ -753,9 +749,6 @@ template {
   line-height: 20px;
   margin-bottom: 10px;
 }
-.grid__description-1 {
-  padding-right: 10px;
-}
 .grid__title {
   font-family: "Roboto Slab", sans-serif;
   font-style: normal;
@@ -766,13 +759,13 @@ template {
   font-size: 25px;
   line-height: 30px;
   margin: 0 0 25px 0;
-  padding-right: 10px;
 }
 .grid__title-2 {
   text-transform: uppercase;
   color: #ffffff;
   font-size: 16px;
   line-height: 25px;
+  margin-bottom: 27px;
 }
 .grid__title-3 {
   font-size: 16px;
@@ -827,7 +820,7 @@ template {
   font-size: 14px;
   line-height: 20px;
   color: #C1F4F5;
-  margin-bottom: 19px;
+  margin-bottom: 18px;
   padding-left: 25px;
 }
 .grid__image-1 {
@@ -845,9 +838,11 @@ template {
   object-fit: cover;
   z-index: -2;
   border-radius: 10px;
+  object-fit: cover;
 }
 .grid__image-3 {
   border-radius: 10px 10px 0 0;
+  object-fit: cover;
 }
 .grid__bottom-1 {
   padding: 12px 10px 12px 35px;
@@ -876,7 +871,7 @@ template {
 .grid__bottom-download {
   display: flex;
   align-items: center;
-  padding: 14px 0 14px 0;
+  padding: 13px 0 13px 0;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1023,11 +1018,12 @@ template {
   font-size: 14px;
   line-height: 20px;
   color: #262D33;
-  padding: 5px 15px;
+  padding: 4px 14px;
   border: 1px solid #D9DADB;
   border-radius: 5px;
   margin-right: 10px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .news {
@@ -1068,6 +1064,13 @@ template {
   line-height: 50px;
   margin: 0 0 25px 0;
 }
+.news__button {
+  width: 161px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 22px 10px 20px;
+}
 
 .list {
   padding: 0 25px 0 25px;
@@ -1076,13 +1079,13 @@ template {
   list-style-type: none;
   margin: 0 30px 0 0;
 }
-.list__grid {
+.list-news__grid {
   display: flex;
   margin-bottom: 60px;
 }
 .list__item {
   display: flex;
-  padding: 25px 3px 25px 0;
+  padding: 25px 0 24px 0;
 }
 .list__image {
   width: 336px;
@@ -1090,9 +1093,6 @@ template {
 }
 .list__content {
   padding-left: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .list__top {
   display: flex;
@@ -1136,7 +1136,7 @@ template {
   color: #939699;
 }
 .list__date {
-  margin-right: 12px;
+  margin-right: 9px;
 }
 .list__icon-bookmark {
   width: 20px;
@@ -1171,7 +1171,6 @@ template {
   text-transform: uppercase;
   color: #262D33;
   padding: 20px 25px;
-  text-align: center;
 }
 .publications__list {
   list-style-type: none;
@@ -1227,6 +1226,11 @@ template {
   line-height: 20px;
   text-align: center;
   color: #262D33;
+}
+.publications__line {
+  height: 1px;
+  width: 100%;
+  background-color: #D9DADB;
 }
 
 .table-articles {
@@ -1323,7 +1327,7 @@ template {
 
   .grid-wrapper {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(5, 170px);
   }
   .grid__card-download {
     grid-row: 5/6;
@@ -1410,7 +1414,7 @@ template {
   .grid-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(8, 170px);
   }
   .grid__card-2 {
     grid-row: 3/5;
@@ -1513,6 +1517,7 @@ template {
   .grid__card-1 {
     grid-row: 1/5;
     grid-column: 1/2;
+    height: auto;
   }
   .grid__card-2 {
     grid-row: 5/7;
@@ -1562,6 +1567,12 @@ template {
   }
   .grid__subtitle-1 {
     margin-top: 0;
+  }
+  .grid__title-1 {
+    padding-right: 10px;
+  }
+  .grid__description-1 {
+    padding-right: 10px;
   }
 
   .list__item {
