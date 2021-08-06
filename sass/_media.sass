@@ -71,7 +71,7 @@
     &-wrapper
       grid-template-columns: repeat(3, 1fr)
       grid-template-rows: repeat(5, 170px)
-      //height: 970px
+    //height: 970px
 
     &__card
       &-download
@@ -85,6 +85,32 @@
       &-social-network
         grid-row: 5 / 6
         grid-column: 3 / 4
+
+  .table
+    flex-direction: column
+
+    &__right
+      flex-direction: row
+
+    &__bottom
+      flex-direction: column
+
+    &-career
+      margin-right: 30px
+
+    &__card-1
+      margin-right: 0
+
+  .swiper
+    margin-right: 0
+    margin-bottom: 30px
+    width: 100%
+
+    &__wrapper
+      width: 100%
+
+    &__image
+      width: 100%
 
 @media (max-width: 992px)
   .container
@@ -159,7 +185,7 @@
       display: grid
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(8, 170px)
-      //height: 1770px
+    //height: 1770px
 
     &__card
       &-2
@@ -204,11 +230,33 @@
 
     &-title
       font-size: 35px
+
   .list
     margin: 0 0 30px 0
 
+    &-news
+      &__grid
+        flex-direction: column
+
+  .footer
     &__grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(2, auto)
+      row-gap: 20px
+
+    &__bottom
       flex-direction: column
+      align-items: flex-start
+
+      &-left
+        margin-bottom: 30px
+
+    &__info
+      flex-direction: column
+
+      &-text
+        margin-bottom: 20px
+
 @media (max-width: 767px)
   .container
     width: 88%
@@ -254,7 +302,7 @@
       display: grid
       grid-template-columns: repeat(1, 1fr)
       grid-template-rows: repeat(16, auto)
-      //height: 3170px
+    //height: 3170px
 
     &__card
       &-1
@@ -297,8 +345,10 @@
       &-social-network
         grid-row: 15 / 16
         grid-column: 1 / 2
+
     &__content-1
       flex-direction: column-reverse
+
       &-text
         padding-bottom: 10px
     //&__text-1
@@ -306,21 +356,59 @@
     &__image-1
       margin-bottom: 0
       border-radius: 0 10px 0 0
+
     &__subtitle-1
       margin-top: 0
+
     &__title-1
       padding-right: 10px
+
     &__description-1
       padding-right: 10px
+  .news
+    &-title
+      font-size: 30px
+      line-height: 40px
 
   .list
     &__item
       flex-direction: column
+
     &__image
       width: 100%
+
     &__content
       padding-left: 0
       margin-top: 25px
+
+  .table
+    &__right
+      flex-direction: column
+
+    &__bottom
+      flex-direction: row
+
+    &-career
+      margin-right: 0
+      margin-bottom: 30px
+
+    &__card-1
+      margin-right: 30px
+
+  .footer
+    &__bottom
+      &-ul
+        flex-direction: column
+        min-width: auto
+
+      &-item
+        margin-bottom: 15px
+
+      &-item:nth-child(4)
+        margin-bottom: 0
+
+      &-left
+        align-items: flex-start
 
 @media (max-width: 576px)
   .logo
@@ -353,6 +441,28 @@
     &-title
       font-size: 30px
 
+  .table
+    &__bottom
+      flex-direction: column
+
+    &__card-1
+      margin-right: 0
+      margin-bottom: 30px
+  .swiper
+    &__title
+      font-size: 35px
+      line-height: 45px
+
+  .contact-form
+    &__input
+      width: 250px
+
+  .footer
+    &__grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+      row-gap: 20px
+
 @media (max-width: 480px)
   .main-screen
     &__title
@@ -366,7 +476,11 @@
     &__content
       &-1
         padding: 0 0 0 25px
+
     &__bottom
       &-1
         padding: 12px 10px 12px 25px
 
+  .contact-form
+    &__input
+      margin-bottom: 20px
