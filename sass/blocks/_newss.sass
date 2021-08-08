@@ -1,20 +1,23 @@
 .news
-  position: relative
-  padding: 50px 0 55px 0
-  background-repeat: no-repeat
-  background-position: center
-  background-size: cover
   margin-bottom: 60px
-  &:before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    right: 0
-    bottom: 0
-    width: 100%
-    height: 100%
-    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+
+  &-parallax
+    position: relative
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background: url("../img/news-bg.jpeg")
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
 
   &-wrapper
     position: relative
@@ -25,6 +28,7 @@
     max-width: 946px
     margin: auto
     text-align: center
+    padding: 50px 0 55px 0
 
   &-title
     color: $light
@@ -36,8 +40,10 @@
     margin: 0 0 25px 0
 
   &__button
-    min-width: 161px
     display: flex
     align-items: center
     justify-content: space-between
     padding: 10px 22px 10px 20px
+
+    &__text
+      margin-right: 8px

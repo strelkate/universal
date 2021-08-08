@@ -1,0 +1,107 @@
+.articles
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 30px
+  color: $text-color
+  padding-top: 58px
+  max-width: 623px
+
+  &-start
+    background-color: $light
+    position: relative
+    z-index: 41
+  &__letter
+    margin: 0 0 45px 0
+
+  &__letter:first-letter
+    font-size: 100px
+    line-height: 75px
+    //text-align: center
+    color: $primary
+    padding-top: 8px
+    padding-right: 6px
+    padding-left: 0
+    margin-left: 0
+    float: left
+    font-weight: bold
+
+  &__subtitle
+    font-family: "Roboto Slab", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 25px
+    line-height: 30px
+    color: $dark
+    margin-bottom: 30px
+
+  &-author
+    &__card
+      background-color: $light
+      border: 1px solid #D9DADB
+      border-radius: 10px
+      text-align: center
+      width: 263px
+      min-height: 296px
+      position: absolute
+      z-index: 40
+      top: -102px
+      right: 248px
+
+    &__content
+      display: flex
+      flex-direction: column
+      padding: 35px 25px 0 25px
+      align-items: center
+
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      margin-bottom: 15px
+      object-fit: cover
+
+    &__name
+      font-family: "Roboto Slab", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: #262D33
+      margin-bottom: 5px
+
+    &__position
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      margin-bottom: 15px
+
+    &__number
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      margin-bottom: 20px
+
+    &__line
+      height: 1px
+      background-color: $line
+      width: 100%
+
+
+    &__bottom
+      padding: 15px 25px
+      text-align: center
+      font-style: normal
+      font-weight: 900
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+
+
+
+
+

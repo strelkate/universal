@@ -10,6 +10,8 @@
     <link rel="icon" href="/universal/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
           rel="stylesheet">
+    <link rel="stylesheet" href="sass/swiper-bundle.min.css">
+    <link rel="stylesheet" href="sass/pagination.min.css">
     <link rel="stylesheet" href="sass/style.css">
 
 </head>
@@ -30,15 +32,15 @@
             </div>
             <!-- /.navbar-wrapper__left -->
             <ul class="navbar-menu">
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Статьи</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Новости</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Горячее</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">HTML</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">CSS</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">JavaScript</a></li>
-                <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Web Design</a></li>
+                <li class="navbar-menu__item"><a href="#grid" class="navbar-menu__link">Статьи</a></li>
+                <li class="navbar-menu__item"><a href="#list-news" class="navbar-menu__link">Новости</a></li>
+                <li class="navbar-menu__item"><a href="#table-articles" class="navbar-menu__link">Горячее</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">HTML</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">CSS</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">JavaScript</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">Web Design</a></li>
             </ul>
-            <button class="button-feedback">Оставить заявку</button>
+            <button data-toggle=modal class="button-feedback">Оставить заявку</button>
         </div>
         <!-- /.navbar-wrapper -->
     </div>
@@ -64,8 +66,10 @@
                         <span class="main-screen__subtitle">Javascript</span>
                         <h1 class="main-screen__title">Расширение Chrome защищает от атак</h1>
                         <button class="button main-screen__button">
-                            <span class="main-screen__button__text">Читать далее</span>
-                            <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                            <a href="index-2.html">
+                                <span class="main-screen__button__text">Читать далее</span>
+                                <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                            </a>
                         </button>
                     </div>
                     <!-- /.main-screen__wrapper -->
@@ -303,11 +307,12 @@
         <!-- /.popular__wrapper -->
     </div>
 </section>
-<section class="grid">
+<section id="grid" class="grid">
     <div class="container">
         <div class="grid-wrapper">
             <div class="grid__card grid__card-1">
                 <div class="grid__content-1">
+
                     <div class="grid__content-1-text">
                         <span class="grid__subtitle grid__subtitle-1">Статьи</span>
                         <h3 class="grid__title grid__title-1">Вам предложили работу мечты, но вы не можете...</h3>
@@ -319,14 +324,17 @@
                     </div>
                     <!-- /.grid__content-1-text -->
                     <img src="img/car.jpg" alt="Photo: car" class="grid__image-1">
+
                 </div>
                 <div class="grid__line"></div>
                 <div class="grid__bottom-1">
                     <img src="img/main-avatar-5.jpg" alt="Photo: avatar" class="grid__avatar-1">
                     <span class="grid__name-1">Инна Квашова:</span>
                     <span class="grid__text-1">Каждый разработчик мечтает переехать в...</span>
-                    <img src="img/comment.svg" alt="Icon: comment" class="grid__icon-comment">
-                    <span class="grid__number-1">342</span>
+                    <div class="grid__comment-1">
+                        <img src="img/comment.svg" alt="Icon: comment" class="grid__icon-comment">
+                        <span class="grid__number-1">342</span>
+                    </div>
                 </div>
                 <!-- /.grid__content-1 -->
             </div>
@@ -440,17 +448,22 @@
     </div>
     <!-- /.container -->
 </section>
-<section class="news" data-parallax="scroll" data-image-src="img/news-bg.jpeg">
-    <div class="news-wrapper">
-        <h2 class="news-title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h2>
-        <button class="button news__button">
-            <span class="news__button__text">Читать далее</span>
-            <img src="img/arrow.svg" alt="" class="news__button__image">
-        </button>
+<section class="news">
+    <!--   <div class="news-parallax" data-parallax="scroll" data-image-src="img/news-bg.jpeg">-->
+    <div class="news-parallax">
+        <div class="news-wrapper">
+            <h2 class="news-title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h2>
+            <button class="button news__button">
+                <a href="index-2.html">
+                    <span class="news__button__text">Читать далее</span>
+                    <img src="img/arrow.svg" alt="" class="news__button__image">
+                </a>
+            </button>
+        </div>
+        <!-- /.news-wrapper -->
     </div>
-    <!-- /.news-wrapper -->
 </section>
-<section class="list-news">
+<section id="list-news" class="list-news">
     <div class="container">
         <div class="list-news__grid">
             <ul class="list">
@@ -673,7 +686,7 @@
             </ul>
             <!-- /.list -->
             <div class="publications">
-                <div class="publications__title">Недавно опубликовано</div>
+                <div class="publications__title">Недавно&nbsp;опубликовано</div>
                 <div class="publications__line"></div>
                 <ul class="publications__list">
 
@@ -692,7 +705,7 @@
                         <img src="img/publications-2.jpg" alt="Photo: publications item" class="publications__image">
                         <div class="publications__content">
                             <div class="publications__content-title">Для чего нужен Node.js и с чем...</div>
-                            <span class="publications__content-time">32 минут назад</span>
+                            <span class="publications__content-time">32 минуты назад</span>
                             <img src="img/number-2.png" alt="number-2" class="publications__image-after">
                         </div>
                         <!-- /.__content -->
@@ -714,7 +727,7 @@
                         <img src="img/publications-4.jpg" alt="Photo: publications item" class="publications__image">
                         <div class="publications__content">
                             <div class="publications__content-title">Переезд в Нью Йорк для работы по...</div>
-                            <span class="publications__content-time">53 минут назад</span>
+                            <span class="publications__content-time">53 минуты назад</span>
                             <img src="img/number-4.png" alt="number-4" class="publications__image-after">
                         </div>
                         <!-- /.__content -->
@@ -736,7 +749,7 @@
                         <img src="img/publications-6.jpg" alt="Photo: publications item" class="publications__image">
                         <div class="publications__content">
                             <div class="publications__content-title">Прокрастинация: побороть отклады...</div>
-                            <span class="publications__content-time">15 минут назад</span>
+                            <span class="publications__content-time">1 час назад</span>
                             <img src="img/number-6.png" alt="number-6" class="publications__image-after">
                         </div>
                         <!-- /.__content -->
@@ -747,7 +760,7 @@
                         <img src="img/publications-7.jpg" alt="Photo: publications item" class="publications__image">
                         <div class="publications__content">
                             <div class="publications__content-title">Правки от заказчика могут быть...</div>
-                            <span class="publications__content-time">15 минут назад</span>
+                            <span class="publications__content-time">2 часа назад</span>
                             <img src="img/number-7.png" alt="number-7" class="publications__image-after">
                         </div>
                         <!-- /.__content -->
@@ -763,37 +776,103 @@
     </div>
     <!-- /.container -->
 </section>
-<section class="table-articles">
+<section id="table-articles" class="table-articles">
     <div class="container">
         <div class="table">
+            <div class="slider">
+                <div class="swiper-container table-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/slide-1.jpeg" alt="Photo: slide-1" class="table-slider__image">
+                            <div class="table-slider__label">Горячее</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
 
-            <div class="swiper">
-                <div class="swiper__slide">
-                    <img src="img/slide-1.jpeg" alt="Photo: slide-1" class="swiper__image">
-                    <div class="swiper__label">Горячее</div>
-                    <div class="swiper__wrapper">
-                        <img src="img/swiper-avatar-1.png" alt="Photo: " class="swiper__avatar">
-                        <div class="swiper__name">Оксана Пушкина</div>
-                        <div class="swiper__position">Фотограф</div>
-                        <h2 class="swiper__title">Выбор читателей: где удобнее работать фрилансеру</h2>
-                        <button class="button swiper__button">
-                            <img src="img/images.svg" alt="Icon: images" class="swiper__icon-images">
-                            <span class="swiper__button-text">Смотреть фото</span>
-                            <span class="swiper__button-number">26</span>
-                        </button>
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-2.jpg" alt="Photo: slide-2" class="table-slider__image">
+                            <div class="table-slider__label">Мнения</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Платные курсы — это не быстрый способ выйти на нужный
+                                    уровень</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-3.jpg" alt="Photo: slide-3" class="table-slider__image">
+                            <div class="table-slider__label">Горячее</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Из-за ограничений стали недоступны серверы Telegram. К чему
+                                    это может...</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-4.jpg" alt="Photo: slide-4" class="table-slider__image">
+                            <div class="table-slider__label">Мнения</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">В вашем портфолио могут быть фейковые проекты, если вы
+                                    сделали...</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-5.jpg" alt="Photo: slide-5" class="table-slider__image">
+                            <div class="table-slider__label">Подборки</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Список Youtube каналов для тех, кто только начинает изучать
+                                    разработку</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <!-- /.swiper__wrapper -->
-                    <div class="swiper__pagination">
-                        <div class="swiper__pagination-path"></div>
-                        <div class="swiper__pagination-path"></div>
-                        <div class="swiper__pagination-path"></div>
-                        <div class="swiper__pagination-path"></div>
-                        <div class="swiper__pagination-path"></div>
+                    <div class="swiper-pagination">
+                        <!--                        <div class="swiper__pagination-path"></div>-->
                     </div>
                 </div>
-                <!-- /.swiper__slide -->
             </div>
-            <!-- /.swiper -->
 
             <div class="table__right">
                 <div class="table-career">
@@ -805,10 +884,13 @@
                             Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование
                         </div>
                         <button class="button table-career__button">
-                            <span class="table-career__button-text">Читать далее</span>
-                            <img src="img/arrow.svg" alt="" class="table-career__button-image">
+                            <a href="index-2.html">
+                                <span class="table-career__button-text">Читать далее</span>
+                                <img src="img/arrow.svg" alt="" class="table-career__button-image">
+                            </a>
                         </button>
                     </div>
+
                 </div>
                 <!-- /.table_career -->
 
@@ -850,7 +932,9 @@
         <div class="contact-form__wrapper">
             <h2 class="contact-form__title">Подпишитесь на нашу рассылку</h2>
             <form action="send.php" method="POST" class="contact-form__form">
-                <input type="email" class="contact-form__input" placeholder="Email" name="email" required>
+                <div class="contact-form__flex-error">
+                    <input type="email" class="contact-form__input" placeholder="Email" name="email" required>
+                </div>
                 <button class="button contact-form__button">Подписаться</button>
             </form>
         </div>
@@ -858,7 +942,7 @@
     </div>
     <!-- /.container -->
 </section>
-<footer class="footer">
+<footer id="footer" class="footer">
     <div class="container">
         <div class="footer__line-color">
             <div class="footer__line-color-red"></div>
@@ -948,7 +1032,8 @@
                     <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Контакты</a></li>
                     <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Работа у нас</a></li>
                     <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Реклама</a></li>
-                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Обратная связь</a></li>
+                    <li data-toggle=modal class="footer__bottom-item"><a href="#" class="footer__bottom-link">Обратная
+                        связь</a></li>
                 </ul>
             </div>
             <!-- /.footer__bottom-left -->
@@ -992,8 +1077,36 @@
     </div>
     <!-- /.container -->
 </footer>
+<div class="modal">
+    <div id="modal_overlay" class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+        <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close">
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Оставить заявку</h3>
+        <form action="send.php" method="POST" class="modal__form">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+                   minlength="2">
+            <input type="tel" class="input modal__input modal__input--phone" placeholder="Phone Number*" name="phone"
+                   required minlength="18">
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+            <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+            <div class="modal__bottom">
+                <button class="button modal__button">Отправить</button>
+                <span class="modal__info">* Обязательные поля</span>
+            </div>
+        </form>
+    </div>
+    <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+<script defer src="js/jquery.validate.min.js"></script>
+<script defer src="js/jquery.mask.min.js"></script>
 <script defer src="js/main.js"></script>
 <script async src="js/parallax.min.js"></script>
 <script async src="js/parallax.js"></script>

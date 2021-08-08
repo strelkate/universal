@@ -15,12 +15,15 @@ body
 .container
   max-width: 1140px
   margin: auto
+  &-2
+    max-width: 946px
+    margin: auto
 
 img
   max-width: 100%
 
 .button
-  min-width: 154px
+  //min-width: 154px
   min-height: 40px
   padding: 10px 20px
   font-style: normal
@@ -33,3 +36,36 @@ img
   border: none
   cursor: pointer
   outline: none
+
+.button:hover
+  background-color: #3586ff
+
+.input
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: #939699
+  border-radius: 5px
+  border: 1px solid $line
+  padding: 10px 15px
+  outline: none
+  outline: none
+
+.message
+  resize: none
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: #939699
+  border-radius: 5px
+  border: 1px solid $line
+  padding: 10px 15px
+  outline: none
+
+.invalid
+  color: $primary
+a
+  text-decoration: none
+  color: inherit

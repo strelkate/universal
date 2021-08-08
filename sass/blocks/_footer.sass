@@ -70,6 +70,8 @@
     line-height: 20px
     color: $text-color
     cursor: pointer
+  &__link:hover
+    text-decoration: underline
 
   &__line
     background-color: $line
@@ -114,6 +116,8 @@
       color: $dark
       cursor: pointer
 
+    &-link:hover
+      text-decoration: underline
 
   &__icon
     &-social-network
@@ -148,6 +152,9 @@
     &-instagram
       background-color: #262626
 
+    &-facebook:hover, &-twitter:hover, &-youtube:hover, &-instagram:hover
+      opacity: 0.5
+
   &__info
     display: flex
     padding-top: 40px
@@ -157,6 +164,7 @@
     font-size: 14px
     line-height: 20px
     color: #939699
+    justify-content: space-between
 
     &-text
       max-width: 750px

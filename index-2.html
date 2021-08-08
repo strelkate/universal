@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Universal - Сайт для Web-разработчиков</title>
+    <link rel="shortcut icon" href="/universal/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/universal/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="sass/swiper-bundle.min.css">
+    <link rel="stylesheet" href="sass/pagination.min.css">
+    <link rel="stylesheet" href="sass/style.css">
+
+</head>
+<body>
+<header class="navbar-2">
+    <div class="container">
+        <div class="navbar-wrapper">
+            <div class="navbar-wrapper__left">
+                <button class="menu-button navbar-wrapper__menu-button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </button>
+
+                <a href="index.html" class="logo-dark">
+                    <img src="img/dark-logo.svg" alt="Logo: Universal" class="logo-dark__image">
+                    <img src="img/dark-universal.svg" alt="Logo: Universal" class="logo-dark__image-text">
+                </a>
+            </div>
+            <!-- /.navbar-wrapper__left -->
+            <ul class="navbar-menu">
+                <li class="navbar-menu__item"><a href="#grid" class="navbar-menu__link-2">Статьи</a></li>
+                <li class="navbar-menu__item"><a href="#list-news" class="navbar-menu__link-2">Новости</a></li>
+                <li class="navbar-menu__item"><a href="#table-articles" class="navbar-menu__link-2">Курсы</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">HTML</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">CSS</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">JavaScript</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">Web Design</a></li>
+            </ul>
+            <button data-toggle=modal class="button-feedback">Оставить заявку</button>
+        </div>
+        <!-- /.navbar-wrapper -->
+    </div>
+    <!-- /.container -->
+</header>
+
+<section class="start-screen">
+        <div class="swiper-container start-screen__slider">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper start-screen__content">
+                <!-- Slides -->
+                <div class="swiper-slide start-screen__page">
+                    <img src="img/photo-page-1.jpeg" alt="Photo: photo page 1" class="start-screen__photo">
+                    <svg class="start-screen__icon-bookmark" width="22" height="28" viewBox="0 0 22 28"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
+                        />
+                    </svg>
+                    <div class="start-screen__wrapper">
+                        <div class="start-screen__opacity-0">
+                            <div class="start-screen__top">
+                                <span class="start-screen__subtitle">Новости</span>
+                                <div class="start-screen__top-left">
+                                    <img src="img/home.svg" alt="Icon: home" class="start-screen__icon-home">
+                                    <span class="start-screen__text start-screen__text-home">На главную</span>
+                                    <div class="start-screen__back">
+                                        <img src="img/arrow-back.svg" alt="Icon: arrow back"
+                                             class="start-screen__icon-arrow-back">
+                                        <div class="start-screen__text start-screen__text-back">Назад</div>
+                                    </div>
+                                    <div class="start-screen__next">
+                                        <div class="start-screen__text start-screen__text-next">Вперед</div>
+                                        <img src="img/arrow-next.svg" alt="Icon: arrow next"
+                                             class="start-screen__icon-arrow-next">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="start-screen__title">Новый налоговый режим для фрилансеров — налог на проф.
+                                доход</h1>
+                            <div class="start-screen__description">
+                                Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
+                                неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+                            </div>
+
+                        </div>
+                        <div class="start-screen__bottom">
+                            <img src="img/clock.svg" alt="Icon: clock" class="start-screen__icon-clock">
+                            <span class="start-screen__date">6 августа, 10:30</span>
+                            <img src="img/heart-2.svg" alt="Icon: heart" class="start-screen__icon-heart">
+                            <span class="start-screen__number-heart">830</span>
+                            <img src="img/comment-2.svg" alt="Icon: comment" class="start-screen__icon-comment">
+                            <span class="start-screen__number-comment">19</span>
+                        </div>
+                    </div>
+                    <!-- /.start-screen__wrapper -->
+                </div>
+                <!-- /.start-screen__page -->
+                <div class="swiper-slide start-screen__page">
+                    <img src="img/photo-tab-4.jpg" alt="Photo: photo page 2" class="start-screen__photo">
+                    <svg class="start-screen__icon-bookmark" width="22" height="28" viewBox="0 0 22 28"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
+                        />
+                    </svg>
+                    <div class="start-screen__wrapper">
+                        <div class="start-screen__opacity-0">
+                            <div class="start-screen__top">
+                                <span class="start-screen__subtitle">Новости</span>
+                                <div class="start-screen__top-left">
+                                    <img src="img/home.svg" alt="Icon: home" class="start-screen__icon-home">
+                                    <span class="start-screen__text start-screen__text-home">На главную</span>
+                                    <div class="start-screen__back">
+                                        <img src="img/arrow-back.svg" alt="Icon: arrow back"
+                                             class="start-screen__icon-arrow-back">
+                                        <span class="start-screen__text start-screen__text-back">Назад</span>
+                                    </div>
+                                    <div class="start-screen__next">
+                                        <span class="start-screen__text start-screen__text-next">Вперед</span>
+                                        <img src="img/arrow-next.svg" alt="Icon: arrow next"
+                                             class="start-screen__icon-arrow-next">
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="start-screen__title">Расследование недели: сколько зарабатывает веб разработчик в
+                                Москве</h1>
+                            <div class="start-screen__description">
+                                Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
+                                неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+                            </div>
+
+                        </div>
+                        <div class="start-screen__bottom">
+                            <img src="img/clock.svg" alt="Icon: clock" class="start-screen__icon-clock">
+                            <span class="start-screen__date">6 августа, 10:30</span>
+                            <img src="img/heart-2.svg" alt="Icon: heart" class="start-screen__icon-heart">
+                            <span class="start-screen__number-heart">830</span>
+                            <img src="img/comment-2.svg" alt="Icon: comment" class="start-screen__icon-comment">
+                            <span class="start-screen__number-comment">19</span>
+                        </div>
+                    </div>
+                    <!-- /.start-screen__wrapper -->
+                </div>
+                <!-- /.start-screen__page -->
+            </div>
+            <!-- /.start-screen__content -->
+        </div>
+        <!-- /.start-screen__slider -->
+</section>
+<section class="articles-start">
+    <div class="container-2">
+        <div class="articles">
+            <div class="articles-author__card">
+                <div class="articles-author__content">
+                    <img src="img/articles-author.png" alt="Photo: author avatar" class="articles-author__avatar">
+                    <div class="articles-author__name">Мира Стахова</div>
+                    <div class="articles-author__position">Фрилансер</div>
+                    <div class="articles-author__number">82 статьи</div>
+                </div>
+                <div class="articles-author__line"></div>
+                <div class="articles-author__bottom">Страница автора</div>
+            </div>
+            <!-- /.articles-author__card -->
+            <p class="articles__letter">
+                M Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития.</br>
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
+                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                модернизации дальнейших направлений развития.
+            </p>
+            <h3 class="articles__subtitle">Введение НПД в РФ</h3>
+            <p>
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
+                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                модернизации
+            </p>
+            <p>
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна,
+            </p>
+            <p>
+                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
+                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                модернизации
+            </p>
+        </div>
+        <!-- /.articles -->
+
+    </div>
+    <!-- /.container-2 -->
+
+</section>
+
+<section class="contact-form">
+    <div class="container">
+        <div class="contact-form__wrapper">
+            <h2 class="contact-form__title">Подпишитесь на нашу рассылку</h2>
+            <form action="send.php" method="POST" class="contact-form__form">
+                <div class="contact-form__flex-error">
+                    <input type="email" class="contact-form__input" placeholder="Email" name="email" required>
+                </div>
+                <button class="button contact-form__button">Подписаться</button>
+            </form>
+        </div>
+        <!-- /.contact-form__wrapper -->
+    </div>
+    <!-- /.container -->
+</section>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer__line-color">
+            <div class="footer__line-color-red"></div>
+            <div class="footer__line-color-purple"></div>
+            <div class="footer__line-color-blue"></div>
+            <div class="footer__line-color-orange"></div>
+            <div class="footer__line-color-green"></div>
+            <div class="footer__line-color-greyblue"></div>
+        </div>
+
+        <div class="footer__grid">
+            <div class="footer__news">
+                <h4 class="footer__title">Новости</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Обновления</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Экспресс</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Politics</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Solar Eclipse</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__news -->
+
+            <div class="footer__articles">
+                <h4 class="footer__title">Статьи</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">HTML</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">CSS</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">JavaScript</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Web Design</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__articles -->
+
+            <div class="footer__video-lessons">
+                <h4 class="footer__title">Видеоуроки</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Скринкасты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Уроки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Вебинары</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__video-lessons -->
+
+            <div class="footer__courses">
+                <h4 class="footer__title">Курсы</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Платные интенсивы</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Бесплатные стримы</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Мастер-классы</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Менторство</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Буткемпы</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__courses -->
+
+            <div class="footer__information">
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Политика данных</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Оферта сайта</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Реквизиты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__information -->
+
+            <div class="footer__categories">
+                <h4 class="footer__title">Категории</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Популярное</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Горячее</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Подборки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Мнения</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__categories -->
+        </div>
+        <!-- /.footer__content -->
+        <div class="footer__line"></div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/footer-logo.svg" alt="Logo">
+                </a>
+                <ul class="footer__bottom-ul">
+                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Контакты</a></li>
+                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Работа у нас</a></li>
+                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Реклама</a></li>
+                    <li data-toggle=modal class="footer__bottom-item"><a href="#" class="footer__bottom-link">Обратная
+                        связь</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__bottom-left -->
+
+            <div class="footer__social-network">
+                <div class="footer__icon-social-network">
+                    <a href="https://ru-ru.facebook.com/" target="_blank"
+                       class="footer__circle footer__circle-facebook">
+                        <img src="img/facebook.svg" alt="Icon: facebook" class="footer__icon-facebook">
+                    </a>
+
+                    <a href="https://twitter.com/?lang=ru" target="_blank"
+                       class="footer__circle footer__circle-twitter">
+                        <img src="img/twitter.svg" alt="Icon: twitter" class="footer__icon-twitter">
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" class="footer__circle footer__circle-youtube">
+                        <img src="img/youtube.svg" alt="Icon: youtube" class="footer__icon-youtube">
+                    </a>
+
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank"
+                       class="footer__circle footer__circle-instagram">
+                        <img src="img/instagram.svg" alt="Icon: instagram" class="footer__icon-instagram">
+                    </a>
+                </div>
+            </div>
+            <!-- /.footer__social-network -->
+        </div>
+        <!-- /.footer__bottom -->
+        <div class="footer__line"></div>
+        <div class="footer__info">
+            <div class="footer__info-text">
+                Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи,
+                новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+                указывайте ссылку.
+            </div>
+            <!-- /.footer__info-text -->
+            <div class="footer__info-years">© 2020 Universal Magazine</div>
+        </div>
+        <!-- /.footer__info -->
+    </div>
+    <!-- /.container -->
+</footer>
+<div class="modal">
+    <div id="modal_overlay" class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+        <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close">
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Оставить заявку</h3>
+        <form action="send.php" method="POST" class="modal__form">
+            <input type="text" class="input modal__input" placeholder="Your Full Name*" name="name" required
+                   minlength="2">
+            <input type="tel" class="input modal__input modal__input--phone" placeholder="Phone Number*" name="phone"
+                   required minlength="18">
+            <input type="email" class="input modal__input" placeholder="Email*" name="email" required>
+            <textarea class="message modal__message" placeholder="Message" name="message"></textarea>
+            <div class="modal__bottom">
+                <button class="button modal__button">Отправить</button>
+                <span class="modal__info">* Обязательные поля</span>
+            </div>
+        </form>
+    </div>
+    <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+<script defer src="js/jquery.validate.min.js"></script>
+<script defer src="js/jquery.mask.min.js"></script>
+<script defer src="js/main.js"></script>
+<script async src="js/parallax.min.js"></script>
+<script async src="js/parallax.js"></script>
+</body>
+</html>
