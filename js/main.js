@@ -21,6 +21,11 @@ $(document).ready(function () {
         $('.navbar-menu').toggleClass('navbar-menu--visible');
     });
 
+    var menuButton2 = $(".menu-button-2");
+    menuButton2.on('click', function () {
+        $('.navbar-menu-2').toggleClass('navbar-menu-2--visible');
+    });
+
 //Скачивание файла
     $('.grid__bottom-download').on('click', function () {
         var link = document.createElement('a');
@@ -129,6 +134,14 @@ $(document).ready(function () {
         navigation: {
             nextEl: '.start-screen__next',
             prevEl: '.start-screen__back',
+        },
+    });
+
+    new Swiper('.photo-slider', {
+        loop: true,
+        navigation: {
+            nextEl: '.photo-slider__button-next',
+            prevEl: '.photo-slider__button-prev',
         },
         keyboard: {
             enabled: true,

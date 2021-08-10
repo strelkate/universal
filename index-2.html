@@ -20,10 +20,10 @@
     <div class="container">
         <div class="navbar-wrapper">
             <div class="navbar-wrapper__left">
-                <button class="menu-button navbar-wrapper__menu-button">
-                    <span class="menu-button__line"></span>
-                    <span class="menu-button__line"></span>
-                    <span class="menu-button__line"></span>
+                <button class="menu-button menu-button-2 navbar-wrapper__menu-button-2">
+                    <span class="menu-button-2__line"></span>
+                    <span class="menu-button-2__line"></span>
+                    <span class="menu-button-2__line"></span>
                 </button>
 
                 <a href="index.html" class="logo-dark">
@@ -32,7 +32,7 @@
                 </a>
             </div>
             <!-- /.navbar-wrapper__left -->
-            <ul class="navbar-menu">
+            <ul class="navbar-menu navbar-menu-2">
                 <li class="navbar-menu__item"><a href="#grid" class="navbar-menu__link-2">Статьи</a></li>
                 <li class="navbar-menu__item"><a href="#list-news" class="navbar-menu__link-2">Новости</a></li>
                 <li class="navbar-menu__item"><a href="#table-articles" class="navbar-menu__link-2">Курсы</a></li>
@@ -49,112 +49,142 @@
 </header>
 
 <section class="start-screen">
-        <div class="swiper-container start-screen__slider">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper start-screen__content">
-                <!-- Slides -->
-                <div class="swiper-slide start-screen__page">
-                    <img src="img/photo-page-1.jpeg" alt="Photo: photo page 1" class="start-screen__photo">
-                    <svg class="start-screen__icon-bookmark" width="22" height="28" viewBox="0 0 22 28"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path clip-rule="evenodd"
-                              d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
-                        />
-                    </svg>
-                    <div class="start-screen__wrapper">
-                        <div class="start-screen__opacity-0">
-                            <div class="start-screen__top">
-                                <span class="start-screen__subtitle">Новости</span>
-                                <div class="start-screen__top-left">
-                                    <img src="img/home.svg" alt="Icon: home" class="start-screen__icon-home">
-                                    <span class="start-screen__text start-screen__text-home">На главную</span>
-                                    <div class="start-screen__back">
-                                        <img src="img/arrow-back.svg" alt="Icon: arrow back"
-                                             class="start-screen__icon-arrow-back">
-                                        <div class="start-screen__text start-screen__text-back">Назад</div>
-                                    </div>
-                                    <div class="start-screen__next">
-                                        <div class="start-screen__text start-screen__text-next">Вперед</div>
-                                        <img src="img/arrow-next.svg" alt="Icon: arrow next"
-                                             class="start-screen__icon-arrow-next">
-                                    </div>
+    <div class="swiper-container start-screen__slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper start-screen__content">
+            <!-- Slides -->
+            <div class="swiper-slide start-screen__page">
+                <img src="img/photo-page-1.jpeg" alt="Photo: photo page 1" class="start-screen__photo">
+                <svg class="start-screen__icon-bookmark" width="22" height="28" viewBox="0 0 22 28"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
+                    />
+                </svg>
+                <div class="start-screen__wrapper">
+                    <div class="start-screen__opacity-0">
+                        <div class="start-screen__top">
+                            <span class="start-screen__subtitle">Новости</span>
+                            <div class="start-screen__top-left">
+                                <img src="img/home.svg" alt="Icon: home" class="start-screen__icon-home">
+                                <span class="start-screen__text start-screen__text-home">На главную</span>
+                                <div class="start-screen__back">
+                                    <img src="img/arrow-back-button.svg" alt="Icon: arrow back"
+                                         class="start-screen__icon-arrow-back">
+                                    <div class="start-screen__text start-screen__text-back">Назад</div>
+                                </div>
+                                <div class="start-screen__next">
+                                    <div class="start-screen__text start-screen__text-next">Вперед</div>
+                                    <img src="img/arrow-next-button.svg" alt="Icon: arrow next"
+                                         class="start-screen__icon-arrow-next">
                                 </div>
                             </div>
-                            <h1 class="start-screen__title">Новый налоговый режим для фрилансеров — налог на проф.
-                                доход</h1>
-                            <div class="start-screen__description">
-                                Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
-                                неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
-                            </div>
+                        </div>
+                        <h1 class="start-screen__title">Новый налоговый режим для фрилансеров — налог на проф.
+                            доход</h1>
+                        <div class="start-screen__description">
+                            Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
+                            неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+                        </div>
 
-                        </div>
-                        <div class="start-screen__bottom">
-                            <img src="img/clock.svg" alt="Icon: clock" class="start-screen__icon-clock">
-                            <span class="start-screen__date">6 августа, 10:30</span>
-                            <img src="img/heart-2.svg" alt="Icon: heart" class="start-screen__icon-heart">
-                            <span class="start-screen__number-heart">830</span>
-                            <img src="img/comment-2.svg" alt="Icon: comment" class="start-screen__icon-comment">
-                            <span class="start-screen__number-comment">19</span>
-                        </div>
                     </div>
-                    <!-- /.start-screen__wrapper -->
-                </div>
-                <!-- /.start-screen__page -->
-                <div class="swiper-slide start-screen__page">
-                    <img src="img/photo-tab-4.jpg" alt="Photo: photo page 2" class="start-screen__photo">
-                    <svg class="start-screen__icon-bookmark" width="22" height="28" viewBox="0 0 22 28"
-                         xmlns="http://www.w3.org/2000/svg">
-                        <path clip-rule="evenodd"
-                              d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
-                        />
-                    </svg>
-                    <div class="start-screen__wrapper">
-                        <div class="start-screen__opacity-0">
-                            <div class="start-screen__top">
-                                <span class="start-screen__subtitle">Новости</span>
-                                <div class="start-screen__top-left">
-                                    <img src="img/home.svg" alt="Icon: home" class="start-screen__icon-home">
-                                    <span class="start-screen__text start-screen__text-home">На главную</span>
-                                    <div class="start-screen__back">
-                                        <img src="img/arrow-back.svg" alt="Icon: arrow back"
-                                             class="start-screen__icon-arrow-back">
-                                        <span class="start-screen__text start-screen__text-back">Назад</span>
-                                    </div>
-                                    <div class="start-screen__next">
-                                        <span class="start-screen__text start-screen__text-next">Вперед</span>
-                                        <img src="img/arrow-next.svg" alt="Icon: arrow next"
-                                             class="start-screen__icon-arrow-next">
-                                    </div>
-                                </div>
-                            </div>
-                            <h1 class="start-screen__title">Расследование недели: сколько зарабатывает веб разработчик в
-                                Москве</h1>
-                            <div class="start-screen__description">
-                                Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
-                                неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
-                            </div>
-
-                        </div>
-                        <div class="start-screen__bottom">
-                            <img src="img/clock.svg" alt="Icon: clock" class="start-screen__icon-clock">
-                            <span class="start-screen__date">6 августа, 10:30</span>
-                            <img src="img/heart-2.svg" alt="Icon: heart" class="start-screen__icon-heart">
-                            <span class="start-screen__number-heart">830</span>
-                            <img src="img/comment-2.svg" alt="Icon: comment" class="start-screen__icon-comment">
-                            <span class="start-screen__number-comment">19</span>
-                        </div>
+                    <div class="start-screen__bottom">
+                        <img src="img/clock.svg" alt="Icon: clock" class="start-screen__icon-clock">
+                        <span class="start-screen__date">6 августа, 10:30</span>
+                        <img src="img/heart-2.svg" alt="Icon: heart" class="start-screen__icon-heart">
+                        <span class="start-screen__number-heart">830</span>
+                        <img src="img/comment-2.svg" alt="Icon: comment" class="start-screen__icon-comment">
+                        <span class="start-screen__number-comment">19</span>
                     </div>
-                    <!-- /.start-screen__wrapper -->
                 </div>
-                <!-- /.start-screen__page -->
+                <!-- /.start-screen__wrapper -->
             </div>
-            <!-- /.start-screen__content -->
+            <!-- /.start-screen__page -->
+            <div class="swiper-slide start-screen__page">
+                <img src="img/photo-tab-4.jpg" alt="Photo: photo page 2" class="start-screen__photo">
+                <svg class="start-screen__icon-bookmark" width="22" height="28" viewBox="0 0 22 28"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                          d="M3.5 0.5H18.5C20.1569 0.5 21.5 1.84315 21.5 3.5V27.5L11.1424 20L0.5 27.5V3.5C0.5 1.84315 1.84315 0.5 3.5 0.5Z"
+                    />
+                </svg>
+                <div class="start-screen__wrapper">
+                    <div class="start-screen__opacity-0">
+                        <div class="start-screen__top">
+                            <span class="start-screen__subtitle">Новости</span>
+                            <div class="start-screen__top-left">
+                                <img src="img/home.svg" alt="Icon: home" class="start-screen__icon-home">
+                                <span class="start-screen__text start-screen__text-home">На главную</span>
+                                <div class="start-screen__back">
+                                    <img src="img/arrow-back-button.svg" alt="Icon: arrow back"
+                                         class="start-screen__icon-arrow-back">
+                                    <span class="start-screen__text start-screen__text-back">Назад</span>
+                                </div>
+                                <div class="start-screen__next">
+                                    <span class="start-screen__text start-screen__text-next">Вперед</span>
+                                    <img src="img/arrow-next-button.svg" alt="Icon: arrow next"
+                                         class="start-screen__icon-arrow-next">
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="start-screen__title">Расследование недели: сколько зарабатывает веб разработчик в
+                            Москве</h1>
+                        <div class="start-screen__description">
+                            Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
+                            неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+                        </div>
+
+                    </div>
+                    <div class="start-screen__bottom">
+                        <img src="img/clock.svg" alt="Icon: clock" class="start-screen__icon-clock">
+                        <span class="start-screen__date">6 августа, 10:30</span>
+                        <img src="img/heart-2.svg" alt="Icon: heart" class="start-screen__icon-heart">
+                        <span class="start-screen__number-heart">830</span>
+                        <img src="img/comment-2.svg" alt="Icon: comment" class="start-screen__icon-comment">
+                        <span class="start-screen__number-comment">19</span>
+                    </div>
+                </div>
+                <!-- /.start-screen__wrapper -->
+            </div>
+            <!-- /.start-screen__page -->
         </div>
-        <!-- /.start-screen__slider -->
+        <!-- /.start-screen__content -->
+    </div>
+    <!-- /.start-screen__slider -->
 </section>
 <section class="articles-start">
     <div class="container-2">
         <div class="articles">
+            <div class="articles__text">
+                <p class="articles__letter">
+                    M Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития.</br>
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                    постоянное
+                    информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                    модернизации дальнейших направлений развития.
+                </p>
+                <h3 class="articles__subtitle">Введение НПД в РФ</h3>
+                <p class="articles__paragraph">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                    постоянное
+                    информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                    модернизации
+                </p>
+                <p class="articles__paragraph">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна,
+                </p>
+                <p class="articles__paragraph">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                    постоянное
+                    информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
+                    модернизации
+                </p>
+            </div>
             <div class="articles-author__card">
                 <div class="articles-author__content">
                     <img src="img/articles-author.png" alt="Photo: author avatar" class="articles-author__avatar">
@@ -166,39 +196,183 @@
                 <div class="articles-author__bottom">Страница автора</div>
             </div>
             <!-- /.articles-author__card -->
-            <p class="articles__letter">
-                M Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
-                формировании дальнейших направлений развития.</br>
-                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
-                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
-                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
-                модернизации дальнейших направлений развития.
-            </p>
-            <h3 class="articles__subtitle">Введение НПД в РФ</h3>
-            <p>
-                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
-                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
-                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
-                модернизации
-            </p>
-            <p>
-                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
-                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна,
-            </p>
-            <p>
-                Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
-                формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что постоянное
-                информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и
-                модернизации
-            </p>
         </div>
         <!-- /.articles -->
-
     </div>
     <!-- /.container-2 -->
-
 </section>
 
+<section class="swiper-photo">
+    <div class="container">
+        <div class="swiper-container photo-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide photo-slider__slide">
+                    <img class="photo-slider__image" src="img/slider-photo-1.jpg" alt="slide">
+                    <div class="photo-slider__bottom">
+                        <div class="photo-slider__bottom-info">Geostatistics deal with quantitative data analysis,
+                            specifically the application of statistical methodology
+                        </div>
+                        <div class="photo-slider__bottom-about">
+                            <div class="photo-slider__line-vertical"></div>
+                            <div class="photo-slider__author">
+                                <img src="img/slider-photo-avatar.png" alt="Photo: avatar author"
+                                     class="photo-slider__author-avatar">
+                                <div class="photo-slider__author-info">
+                                    <div class="photo-slider__author-name">Андрей Вашигаев</div>
+                                    <div class="photo-slider__author-position">Фотограф</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide photo-slider__slide">
+                    <img class="photo-slider__image" src="img/slider-photo-2.jpeg" alt="slide">
+                    <div class="photo-slider__bottom">
+                        <div class="photo-slider__bottom-info">Geostatistics deal with quantitative data analysis,
+                            specifically the application of statistical methodology
+                        </div>
+                        <div class="photo-slider__bottom-about">
+                            <div class="photo-slider__line-vertical"></div>
+                            <div class="photo-slider__author">
+                                <img src="img/slider-photo-avatar.png" alt="Photo: avatar author"
+                                     class="photo-slider__author-avatar">
+                                <div class="photo-slider__author-info">
+                                    <div class="photo-slider__author-name">Андрей Вашигаев</div>
+                                    <div class="photo-slider__author-position">Фотограф</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide photo-slider__slide">
+                    <img class="photo-slider__image" src="img/slider-photo-3.jpeg" alt="slide">
+                    <div class="photo-slider__bottom">
+                        <div class="photo-slider__bottom-info">Geostatistics deal with quantitative data analysis,
+                            specifically the application of statistical methodology
+                        </div>
+                        <div class="photo-slider__bottom-about">
+                            <div class="photo-slider__line-vertical"></div>
+                            <div class="photo-slider__author">
+                                <img src="img/slider-photo-avatar.png" alt="Photo: avatar author"
+                                     class="photo-slider__author-avatar">
+                                <div class="photo-slider__author-info">
+                                    <div class="photo-slider__author-name">Андрей Вашигаев</div>
+                                    <div class="photo-slider__author-position">Фотограф</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.swiper-wrapper -->
+            <button class="photo-slider__button photo-slider__button-prev"></button>
+            <button class="photo-slider__button photo-slider__button-next"></button>
+        </div>
+        <!-- /.swiper-container -->
+    </div>
+    <!-- /.container -->
+</section>
+<section class="articles-finish">
+    <div class="container-2">
+        <div class="articles articles-2">
+            <div class="articles__text">
+                <p class="articles__paragraph">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                    постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                    внедрения и модернизации дальнейших направлений развития.
+                </p>
+                <p class="articles__paragraph">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                    постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                    внедрения и модернизации
+                </p>
+                <p class="articles__paragraph">
+                    Идейные соображения высшего порядка, а также рамки и место обучения кадров играет важную роль в
+                    формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что
+                    постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс
+                    внедрения и модернизации дальнейших направлений развития. Таким образом консультация с широким
+                    активом способствует подготовки и реализации направлений
+                </p>
+                <p class="articles__paragraph-bold">
+                    Таким образом консультация с широким активом способствует подготовки и реализации направлений
+                    прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности
+                    в значительной степени обуславливает.
+                </p>
+                <p class="articles__paragraph">
+                    Таким образом консультация с широким активом способствует подготовки и реализации направлений
+                    прогрессивного развития. Не следует, однако забывать, что новая модель организационной деятельности
+                    в значительной степени обуславливает создание модели развития. Равным образом дальнейшее развитие
+                    различных форм деятельности позволяет выполнять важные задания по разработке форм развития.
+                    Разнообразный и богатый опыт постоянный количественный
+                </p>
+                <p class="articles__paragraph">
+                    Задача организации, в особенности же консультация с широким активом требуют от нас анализа новых
+                    предложений. Повседневная практика показывает, что постоянный количественный рост и сфера нашей
+                </p>
+                <div class="articles__tags">
+                    <span class="articles__tags-item">Travel</span>
+                    <span class="articles__tags-item">Destinations</span>
+                    <span class="articles__tags-item">Nature</span>
+                    <span class="articles__tags-item">World</span>
+                    <span class="articles__tags-item">Alaska</span>
+                </div>
+            </div>
+            <div class="articles-material">
+                <div class="articles-material__title">Материал по теме</div>
+                <div class="articles-material__content">
+                    <img src="img/giraffe.jpg" alt="Photo: giraffe" class="articles-material__image">
+                    <div class="articles-material__text">
+                        <div class="articles-material__subtitle">20+ инструментов для js-разработчика</div>
+                        <div class="articles-material__description">
+                            Узнайте, какими инструментами вы еще не пользовались, а могли бы. Эти инструменты помогут вам
+                            ускорить свою работу или повысить ее качество. Все инструменты собраны в виде...
+                        </div>
+                        <div class="articles-material__bottom">
+                            <img src="img/eye.svg" alt="Icon: eye" class="articles-material__icon-eye">
+                            <span class="articles-material__number-eye">1,623</span>
+                            <img src="img/comment.svg" alt="Icon: eye" class="articles-material__icon-comment">
+                            <span class="articles-material__number-comment">102</span>
+                        </div>
+                        <!-- /.articles-material__bottom -->
+                    </div>
+                    <!-- /.articles-material__text -->
+                </div>
+                <!-- /.articles-material__content -->
+            </div>
+            <!-- /.articles__material -->
+        </div>
+        <!-- /.articles -->
+    </div>
+    <!-- /.container-2 -->
+</section>
+<section class="repost">
+    <div class="container-2">
+        <div class="repost__line"></div>
+        <h3 class="repost__title">Поддержите репостом</h3>
+        <div class="repost-button">
+            <button class="button repost-button__button repost-button__like">
+                <img src="img/heart-2.svg" alt="Icon: heart" class="repost-button__icon repost-button__icon-heart">
+                <span class="repost-button__text">Like it</span>
+                <span class="repost-button__number">42</span>
+            </button>
+            <button class="button repost-button__button repost-button__share">
+                <img src="img/facebook.svg" alt="Icon: facebook" class="repost-button__icon repost-button__icon-facebook">
+                <span class="repost-button__text">Share</span>
+                <span class="repost-button__number">80</span>
+            </button>
+            <button class="button repost-button__button repost-button__tweet">
+                <img src="img/twitter.svg" alt="Icon: twitter" class="repost-button__icon">
+                <span class="repost-button__text">Tweet</span>
+                <span class="repost-button__number">33</span>
+            </button>
+        </div>
+        <!-- /.repost__buttons -->
+    </div>
+    <!-- /.container-2 -->
+</section>
 <section class="contact-form">
     <div class="container">
         <div class="contact-form__wrapper">

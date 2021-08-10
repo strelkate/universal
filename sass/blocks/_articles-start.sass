@@ -5,24 +5,26 @@
   line-height: 30px
   color: $text-color
   padding-top: 58px
-  max-width: 623px
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
 
   &-start
     background-color: $light
-    position: relative
-    z-index: 41
+    padding-bottom: 30px
+  &__text
+    max-width: 625px
+
+
   &__letter
     margin: 0 0 45px 0
 
   &__letter:first-letter
     font-size: 100px
     line-height: 75px
-    //text-align: center
     color: $primary
     padding-top: 8px
     padding-right: 6px
-    padding-left: 0
-    margin-left: 0
     float: left
     font-weight: bold
 
@@ -35,6 +37,10 @@
     color: $dark
     margin-bottom: 30px
 
+  &__paragraph
+    margin-bottom: 30px
+
+
   &-author
     &__card
       background-color: $light
@@ -43,10 +49,8 @@
       text-align: center
       width: 263px
       min-height: 296px
-      position: absolute
+      margin-top: -160px
       z-index: 40
-      top: -102px
-      right: 248px
 
     &__content
       display: flex
@@ -100,6 +104,9 @@
       font-size: 14px
       line-height: 20px
       color: $dark
+
+
+
 
 
 

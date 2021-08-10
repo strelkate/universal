@@ -15,7 +15,12 @@
       border: none
       background-color: $dark
       cursor: pointer
-
+      &-2
+        background-color: $light
+        &__line
+          background-color: $dark
+          width: 16px
+          height: 1px
       &__line
         width: 16px
         height: 1px
@@ -39,6 +44,13 @@
       bottom: 0
       top: 54px
       z-index: 99
+      &-2
+        background-color: $light
+        &--visible
+          display: flex
+          justify-content: center
+          height: 70px
+          overflow: auto
 
       &__item
         margin-right: 60px
@@ -53,6 +65,8 @@
         overflow: auto
   .logo
     margin-left: 30px
+    &-dark
+      margin-left: 30px
 
   .main-screen
     &__content
@@ -129,13 +143,29 @@
   .start-screen
     &__title
       font-size: 40px
-      line-height: 60px
+      line-height: 55px
+    &__wrapper
+      max-width: 800px
+
+  .articles
+    &__text
+      max-width: 515px
 
 @media (max-width: 992px)
   .container
     max-width: 700px
+    &-2
+      max-width: 700px
   .logo
     width: 140px
+    &-dark
+      width: 140px
+      &__image
+        width: 34px
+        height: 34px
+        &-text
+          height: 20px
+
   .navbar
     &-menu
       &__item
@@ -276,12 +306,53 @@
       &-text
         margin-bottom: 20px
 
+  .start-screen
+    &__wrapper
+      max-width: 700px
+
+  .articles
+    flex-direction: column-reverse
+    align-items: center
+
+    &-author
+      &__card
+        margin-bottom: 30px
+    &__text
+      max-width: none
+      width: 100%
+
+    &-2
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+    &-material
+      max-width: none
+      margin-top: 45px
+      &__content
+        flex-direction: row
+      &__image
+        margin-right: 20px
+        margin-bottom: 0
+
+  .repost
+    &__line
+      width: 100%
+
 @media (max-width: 767px)
   .container
     width: 88%
+    &-2
+      width: 88%
 
   .logo
     width: 120px
+    &-dark
+      width: 120px
+      &__image
+        width: 30px
+        height: 30px
+        &-text
+          height: 15px
   .navbar
     &-menu
       &__item
@@ -429,11 +500,38 @@
       &-left
         align-items: flex-start
 
+  .start-screen
+    &__wrapper
+      max-width: none
+      width: 88%
+    &__title
+      font-size: 32px
+      line-height: 50px
+    &__description
+      font-size: 16px
+      line-height: 28px
+  .articles
+    &-material
+      &__content
+        flex-direction: column
+      &__image
+        margin-right: 0
+        margin-bottom: 15px
+
 @media (max-width: 576px)
   .logo
     width: 100px
     margin-left: 10px
-
+    &-dark
+      width: 100px
+      height: 24px
+      margin-left: 10px
+      &__image
+        width: 24px
+        height: 24px
+        margin-right: 5px
+        &-text
+          height: 11px
   .navbar
     &-menu
       &--visible
@@ -477,12 +575,35 @@
       width: 250px
     &__flex-error
       max-width: 260px
+    &__title
+      font-size: 35px
+      line-height: 40px
 
   .footer
     &__grid
       grid-template-columns: repeat(2, 1fr)
       grid-template-rows: repeat(3, auto)
       row-gap: 20px
+
+  .start-screen
+    &__title
+      font-size: 28px
+      line-height: 40px
+    &__description
+      font-size: 14px
+      line-height: 25px
+
+  .photo-slider
+    &__bottom
+      flex-direction: column
+      align-items: flex-start
+      &-info
+        padding-bottom: 7px
+    &__line-vertical
+      display: none
+  .articles
+    &__tags
+      flex-wrap: wrap
 
 @media (max-width: 480px)
   .main-screen
@@ -502,6 +623,49 @@
       &-1
         padding: 12px 10px 12px 25px
 
+  .table
+    &-slider
+      &__title
+        font-size: 30px
+        line-height: 40px
+
   .contact-form
     &__input
       margin-bottom: 20px
+
+    &__form
+      flex-direction: column
+      align-items: center
+
+    &__title
+      font-size: 30px
+      line-height: 40px
+
+  .start-screen
+    &__title
+      font-size: 25px
+      line-height: 35px
+    &__top
+      flex-direction: column-reverse
+      align-items: flex-start
+      margin-bottom: 30px
+      &-left
+        margin-bottom: 20px
+    &__text
+      &-home
+        display: none
+    &__icon
+      &-home
+        margin-right: 15px
+    &__description
+      margin-bottom: 25px
+
+    &__wrapper
+      padding: 35px 0 73px 0
+
+  .repost
+    &-button
+      flex-wrap: wrap
+      &__button
+        margin-bottom: 20px
+
