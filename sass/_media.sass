@@ -1,6 +1,7 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
+
     &-2
       max-width: 800px
   .menu
@@ -15,12 +16,15 @@
       border: none
       background-color: $dark
       cursor: pointer
+
       &-2
         background-color: $light
+
         &__line
           background-color: $dark
           width: 16px
           height: 1px
+
       &__line
         width: 16px
         height: 1px
@@ -44,8 +48,10 @@
       bottom: 0
       top: 54px
       z-index: 99
+
       &-2
         background-color: $light
+
         &--visible
           display: flex
           justify-content: center
@@ -65,6 +71,7 @@
         overflow: auto
   .logo
     margin-left: 30px
+
     &-dark
       margin-left: 30px
 
@@ -125,6 +132,7 @@
       height: 570px
       margin-right: 0
       margin-bottom: 30px
+
       &-container
         width: 100%
         height: 570px
@@ -144,6 +152,7 @@
     &__title
       font-size: 40px
       line-height: 55px
+
     &__wrapper
       max-width: 800px
 
@@ -151,18 +160,30 @@
     &__text
       max-width: 515px
 
+  .other
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, auto)
+
+    &__content
+      max-width: none
+      width: 100%
+
 @media (max-width: 992px)
   .container
     max-width: 700px
+
     &-2
       max-width: 700px
   .logo
     width: 140px
+
     &-dark
       width: 140px
+
       &__image
         width: 34px
         height: 34px
+
         &-text
           height: 20px
 
@@ -314,9 +335,10 @@
     flex-direction: column-reverse
     align-items: center
 
-    &-author
-      &__card
+    &__author
+      &-card
         margin-bottom: 30px
+
     &__text
       max-width: none
       width: 100%
@@ -325,11 +347,14 @@
       flex-direction: column
       align-items: flex-start
       justify-content: space-between
+
     &-material
       max-width: none
       margin-top: 45px
+
       &__content
         flex-direction: row
+
       &__image
         margin-right: 20px
         margin-bottom: 0
@@ -341,16 +366,20 @@
 @media (max-width: 767px)
   .container
     width: 88%
+
     &-2
       width: 88%
 
   .logo
     width: 120px
+
     &-dark
       width: 120px
+
       &__image
         width: 30px
         height: 30px
+
         &-text
           height: 15px
   .navbar
@@ -504,9 +533,11 @@
     &__wrapper
       max-width: none
       width: 88%
+
     &__title
       font-size: 32px
       line-height: 50px
+
     &__description
       font-size: 16px
       line-height: 28px
@@ -514,6 +545,7 @@
     &-material
       &__content
         flex-direction: column
+
       &__image
         margin-right: 0
         margin-bottom: 15px
@@ -522,14 +554,17 @@
   .logo
     width: 100px
     margin-left: 10px
+
     &-dark
       width: 100px
       height: 24px
       margin-left: 10px
+
       &__image
         width: 24px
         height: 24px
         margin-right: 5px
+
         &-text
           height: 11px
   .navbar
@@ -565,6 +600,7 @@
     &__card-1
       margin-right: 0
       margin-bottom: 30px
+
     &-slider
       &__title
         font-size: 35px
@@ -573,8 +609,10 @@
   .contact-form
     &__input
       width: 250px
+
     &__flex-error
       max-width: 260px
+
     &__title
       font-size: 35px
       line-height: 40px
@@ -589,6 +627,7 @@
     &__title
       font-size: 28px
       line-height: 40px
+
     &__description
       font-size: 14px
       line-height: 25px
@@ -597,13 +636,20 @@
     &__bottom
       flex-direction: column
       align-items: flex-start
+
       &-info
         padding-bottom: 7px
+
     &__line-vertical
       display: none
+
   .articles
     &__tags
       flex-wrap: wrap
+
+  .other
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: repeat(4, auto)
 
 @media (max-width: 480px)
   .main-screen
@@ -645,18 +691,23 @@
     &__title
       font-size: 25px
       line-height: 35px
+
     &__top
       flex-direction: column-reverse
       align-items: flex-start
       margin-bottom: 30px
+
       &-left
         margin-bottom: 20px
+
     &__text
       &-home
         display: none
+
     &__icon
       &-home
         margin-right: 15px
+
     &__description
       margin-bottom: 25px
 
@@ -666,6 +717,7 @@
   .repost
     &-button
       flex-wrap: wrap
+
       &__button
         margin-bottom: 20px
 
