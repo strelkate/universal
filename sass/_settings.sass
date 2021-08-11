@@ -1,14 +1,17 @@
 *
   box-sizing: border-box
-//@font-face
-//  font-family: "Lato-Bold", serif
-//  src: url("../font/latobold.woff") format("woff"), url("../font/latobold.woff2") format("woff2")
-//@font-face
-//  font-family: "Lato-Regular", serif
-//  src: url("../font/latoregular.woff") format("woff"), url("../font/latoregular.woff2") format("woff2")
-
+@font-face
+  font-family: "LatoBlack"
+  src: url("../font/latoblack.woff") format("woff"), url("../font/latoblack.woff2") format("woff2")
+  font-family: "LatoBlack", sans-serif
+  font-style: normal
+@font-face
+  font-family: "LatoRegular"
+  src: url("../font/latoregular.woff") format("woff"), url("../font/latoregular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
 body
-  font-family: 'Lato', sans-serif
+  font-family: "LatoRegular", sans-serif
   background-color: $secondary
   color: $text-color
 
@@ -24,10 +27,11 @@ img
 
 .button
   //min-width: 154px
+  font-family: "LatoBlack", sans-serif
   min-height: 40px
   padding: 10px 20px
   font-style: normal
-  font-weight: bold
+  //font-weight: bold
   font-size: 14px
   line-height: 20px
   color: $light
@@ -49,7 +53,7 @@ img
   border-radius: 5px
   border: 1px solid $line
   padding: 10px 15px
-  outline: none
+  min-height: 40px
   outline: none
 
 .message
@@ -66,6 +70,41 @@ img
 
 .invalid
   color: $primary
+
+#email-error, #modal__select-error, #message-error, #horns-error, #email__modal-error, #comment-error
+  color: $primary
+  font-style: normal
+  font-weight: normal
+  font-size: 10px
+  line-height: 0
+  position: absolute
+
+#modal__select-error
+  left: 45px
+  top: 147px
+
+#message-error
+  left: 45px
+  top: 310px
+#email__modal-error
+  left: 45px
+  top: 395px
+
+#horns-error
+  left: 45px
+  top: 431px
+
+#email-error
+  left: 10px
+  top: 50px
+
+#comment-error
+  left: 135px
+  top: 206px
 a
   text-decoration: none
   color: inherit
+
+
+
+

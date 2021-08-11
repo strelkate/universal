@@ -331,6 +331,10 @@
     &__wrapper
       max-width: 700px
 
+    &__icon
+      &-bookmark
+        left: -30px
+
   .articles
     flex-direction: column-reverse
     align-items: center
@@ -362,6 +366,19 @@
   .repost
     &__line
       width: 100%
+
+  .comments
+    &__top
+      &-title
+        &-text
+          font-size: 35px
+          line-height: 40px
+        &-amount
+          font-size: 35px
+          line-height: 40px
+    &-textarea
+      &__message
+        overflow: hidden
 
 @media (max-width: 767px)
   .container
@@ -549,6 +566,27 @@
       &__image
         margin-right: 0
         margin-bottom: 15px
+  .photo
+    &-slider
+      &__button
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        top: 190px
+      &__image
+        height: 400px
+  .comments
+    &__top
+      &-title
+        &-text
+          font-size: 30px
+          line-height: 35px
+        &-amount
+          font-size: 30px
+          line-height: 35px
+    &__description
+      font-size: 15px
+      line-height: 25px
 
 @media (max-width: 576px)
   .logo
@@ -632,6 +670,11 @@
       font-size: 14px
       line-height: 25px
 
+    &__icon
+      &-bookmark
+        left: 0
+        top: -40px
+
   .photo-slider
     &__bottom
       flex-direction: column
@@ -643,6 +686,19 @@
     &__line-vertical
       display: none
 
+    &__button
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      top: 160px
+      &-prev
+        left: 20px
+      &-next
+        right: 20px
+    &__image
+      height: 300px
+
+
   .articles
     &__tags
       flex-wrap: wrap
@@ -651,6 +707,23 @@
     grid-template-columns: repeat(1, 1fr)
     grid-template-rows: repeat(4, auto)
 
+  .comments
+    &__content
+      &-top-2
+        flex-direction: column
+        align-items: flex-start
+    &__top
+      flex-direction: column
+      align-items: flex-start
+      &-title
+        margin-bottom: 20px
+    &-textarea
+      //min-height: 310px
+      &__message
+        min-height: 110px
+//#comment-error
+//  left: 135px
+//  top: 186px
 @media (max-width: 480px)
   .main-screen
     &__title
@@ -695,7 +768,7 @@
     &__top
       flex-direction: column-reverse
       align-items: flex-start
-      margin-bottom: 30px
+      margin-bottom: 50px
 
       &-left
         margin-bottom: 20px
@@ -707,6 +780,10 @@
     &__icon
       &-home
         margin-right: 15px
+
+      &-bookmark
+        left: 74px
+        top: -70px
 
     &__description
       margin-bottom: 25px
@@ -720,4 +797,42 @@
 
       &__button
         margin-bottom: 20px
+
+  .comments
+    &__top
+      flex-direction: column
+      align-items: flex-start
+      &-title
+        margin-bottom: 20px
+
+    &-textarea
+      //min-height: 310px
+      &__message
+        min-height: 90px
+      &__button
+        margin-left: 0
+        &__text
+          margin-right: 0
+        &__image
+          display: none
+
+      &__title
+        font-size: 15px
+
+      &__avatar
+        display: none
+
+    &__wrapper
+      padding: 30px 20px 35px 15px
+
+    &__avatar
+      width: 45px
+      height: 45px
+
+    &__item-2
+      margin-left: 60px
+
+
+
+
 
