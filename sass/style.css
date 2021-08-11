@@ -496,7 +496,7 @@ template {
 }
 .navbar-2 {
   padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   position: fixed;
   width: 100%;
   z-index: 50;
@@ -643,7 +643,7 @@ template {
 }
 .main-screen__title {
   max-width: 598px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -929,7 +929,7 @@ template {
   margin-bottom: 10px;
 }
 .grid__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   color: #262D33;
@@ -1263,7 +1263,7 @@ template {
 }
 .news-title {
   color: #ffffff;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -1335,7 +1335,7 @@ template {
   color: #AC8EE3;
 }
 .list__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -1504,7 +1504,7 @@ template {
   margin-right: 30px;
 }
 .table__card-title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   color: #262D33;
@@ -1560,7 +1560,7 @@ template {
   letter-spacing: 0.5px;
 }
 .table-career__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -1677,7 +1677,7 @@ template {
   margin-bottom: 30px;
 }
 .table-slider__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -1719,7 +1719,7 @@ template {
   align-items: flex-start;
 }
 .contact-form__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -1964,7 +1964,7 @@ template {
   cursor: pointer;
 }
 .modal__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2108,7 +2108,7 @@ template {
 }
 .start-screen__title {
   max-width: 750px;
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 55px;
@@ -2230,7 +2230,7 @@ template {
   float: left;
 }
 .articles__subtitle {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -2265,7 +2265,7 @@ template {
   object-fit: cover;
 }
 .articles__author-name {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2408,7 +2408,7 @@ template {
   background-color: #ffffff;
 }
 .articles__paragraph-bold {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -2456,7 +2456,7 @@ template {
   flex-direction: column;
 }
 .articles-material__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -2472,7 +2472,7 @@ template {
   border-radius: 10px;
 }
 .articles-material__subtitle {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2517,7 +2517,7 @@ template {
   background-color: #D9DADB;
 }
 .repost__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -2569,7 +2569,7 @@ template {
   max-width: 263px;
 }
 .other__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2620,7 +2620,7 @@ template {
   align-items: center;
 }
 .comments__top-title-text {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -2702,7 +2702,7 @@ template {
   margin-bottom: 10px;
 }
 .comments__content-top__name {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -2810,7 +2810,7 @@ template {
   width: 100%;
 }
 .comments-textarea__title {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: "RobotoSlabBold", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
