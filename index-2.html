@@ -12,6 +12,7 @@
           rel="stylesheet">
     <link rel="stylesheet" href="sass/swiper-bundle.min.css">
     <link rel="stylesheet" href="sass/pagination.min.css">
+    <!--    <link rel="stylesheet" href="sass/style.min.css">-->
     <link rel="stylesheet" href="sass/style.css">
 
 </head>
@@ -179,7 +180,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide photo-slider__slide">
-                    <img class="photo-slider__image lazyload" data-src="img/slider-photo-2.jpg" src="img/slider-photo-2.jpg" alt="slide">
+                    <img class="photo-slider__image " loading="lazy" src="img/slider-photo-2.jpg" alt="slide">
                     <div class="photo-slider__bottom">
                         <div class="photo-slider__bottom-info">Geostatistics deal with quantitative data analysis,
                             specifically the application of statistical methodology
@@ -198,7 +199,7 @@
                     </div>
                 </div>
                 <div class="swiper-slide photo-slider__slide">
-                    <img class="photo-slider__image lazyload" data-src="img/slider-photo-3.jpg" src="img/slider-photo-3.jpg" alt="slide">
+                    <img class="photo-slider__image " loading="lazy" src="img/slider-photo-3.jpg" alt="slide">
                     <div class="photo-slider__bottom">
                         <div class="photo-slider__bottom-info">Geostatistics deal with quantitative data analysis,
                             specifically the application of statistical methodology
@@ -534,7 +535,8 @@
 
                 <li class="comments__line comments__line-invisible"></li>
                 <li class="comments__item comments__item-invisible">
-                    <img data-src="img/comments-avatar-3.png" src="img/comments-avatar-3.png" alt="Photo: avatar" class="comments__avatar lazyload">
+                    <img src="img/comments-avatar-3.png" alt="Photo: avatar" class="comments__avatar "
+                         loading="lazy">
                     <div class="comments__content">
                         <div class="comments__content-top">
                             <span class="comments__content-top__name">Анжела Иванова</span>
@@ -561,7 +563,8 @@
 
                 <li class="comments__line comments__line-invisible"></li>
                 <li class="comments__item comments__item-invisible">
-                    <img data-src="img/comments-avatar-4.png" src="img/comments-avatar-4.png" alt="Photo: avatar" class="comments__avatar lazyload">
+                    <img src="img/comments-avatar-4.png" alt="Photo: avatar" class="comments__avatar "
+                         loading="lazy">
                     <div class="comments__content">
                         <div class="comments__content-top">
                             <span class="comments__content-top__name">Крис Яков</span>
@@ -588,7 +591,8 @@
 
                 <li class="comments__line comments__line-invisible"></li>
                 <li class="comments__item comments__item-invisible">
-                    <img data-src="img/slider-photo-avatar.png" src="img/slider-photo-avatar.png" alt="Photo: avatar" class="comments__avatar lazyload">
+                    <img src="img/slider-photo-avatar.png" alt="Photo: avatar" class="comments__avatar"
+                         loading="lazy">
                     <div class="comments__content">
                         <div class="comments__content-top">
                             <span class="comments__content-top__name">Михаил Степашин</span>
@@ -623,7 +627,8 @@
                     <div class="comments-textarea__content">
                         <h3 class="comments-textarea__title">Что вы думаете на этот счет? </h3>
                         <form action="send.php" method="POST" class="comments-textarea__form">
-                            <textarea name="comment" class="comments-textarea__message" required="required" minlength="100"></textarea>
+                            <textarea name="comment" class="comments-textarea__message" required="required"
+                                      minlength="100"></textarea>
                             <button class="button comments-textarea__button">
                                 <span class="comments-textarea__button__text">Отправить</span>
                                 <img src="img/arrow.svg" alt="Icon: arrow" class="comments-textarea__button__image">
@@ -836,7 +841,8 @@
 <script defer src="js/swiper-bundle.min.js"></script>
 <script defer src="js/jquery.validate.min.js"></script>
 <script defer src="js/jquery.mask.min.js"></script>
-<script defer src="js/main.js"></script>
+<script defer src="js/main.min.js"></script>
+<!--<script defer src="js/main.js"></script>-->
 <script async src="js/parallax.min.js"></script>
 <script async src="js/parallax.js"></script>
 <script async src="js/lazysizes.min.js"></script>
