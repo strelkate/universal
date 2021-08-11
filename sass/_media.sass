@@ -169,6 +169,47 @@
       width: 100%
 
 @media (max-width: 992px)
+
+  .popular__article__content:hover
+      text-decoration: none
+  .list
+    &__title:hover
+      text-decoration: none
+  .publications__content-title:hover
+      text-decoration: none
+  .button-feedback:hover
+    background-color: #656B70
+  .navbar-menu__link:hover
+    text-decoration: none
+  .navbar-menu__link-2:hover
+    text-decoration: none
+  .main-screen__tab:hover
+    background-color: $light
+  .comments
+    &__top-button:hover, &__loading:hover
+      text-decoration: none
+  .footer
+    &__link:hover, &__bottom-link:hover
+      text-decoration: none
+
+    &__circle
+      &-facebook:hover, &-twitter:hover, &-youtube:hover, &-instagram:hover
+        opacity: 1
+  .grid
+    &__circle
+      &-facebook:hover, &-twitter:hover, &-youtube:hover
+        opacity: 1
+    &__title
+      &-1:hover, &-2:hover, &-3:hover, &-4:hover, &-5:hover, &-6:hover, &-7:hover
+        text-decoration: none
+    &__bottom
+      &-download:hover
+        text-decoration: none
+
+  .button:hover
+    background-color: $primary
+
+
   .container
     max-width: 700px
 
@@ -195,6 +236,9 @@
   .main-screen
     margin-bottom: 600px
     //height: 410px
+    &__title
+      font-size: 35px
+      line-height: 40px
 
     &__content
       width: 100%
@@ -308,6 +352,9 @@
         flex-direction: column
   .publications
     width: 100%
+  .table
+    &-career
+      height: auto
   .footer
     &__grid
       grid-template-columns: repeat(3, 1fr)
@@ -373,9 +420,11 @@
         &-text
           font-size: 35px
           line-height: 40px
+
         &-amount
           font-size: 35px
           line-height: 40px
+
     &-textarea
       &__message
         overflow: hidden
@@ -412,9 +461,6 @@
     &__left
       &:before
         width: 100%
-
-    &__title
-      font-size: 35px
 
     &__photo
       object-fit: cover
@@ -573,6 +619,7 @@
         height: 45px
         border-radius: 50%
         top: 190px
+
       &__image
         height: 400px
   .comments
@@ -581,9 +628,11 @@
         &-text
           font-size: 30px
           line-height: 35px
+
         &-amount
           font-size: 30px
           line-height: 35px
+
     &__description
       font-size: 15px
       line-height: 25px
@@ -619,6 +668,10 @@
     padding: 10px 12px
 
   .main-screen
+    &__title
+      font-size: 30px
+      line-height: 32px
+
     &__wrapper
       margin-left: 25px
 
@@ -691,10 +744,13 @@
       height: 30px
       border-radius: 50%
       top: 160px
+
       &-prev
         left: 20px
+
       &-next
         right: 20px
+
     &__image
       height: 300px
 
@@ -712,11 +768,14 @@
       &-top-2
         flex-direction: column
         align-items: flex-start
+
     &__top
       flex-direction: column
       align-items: flex-start
+
       &-title
         margin-bottom: 20px
+
     &-textarea
       //min-height: 310px
       &__message
@@ -726,10 +785,6 @@
 //  top: 186px
 @media (max-width: 480px)
   .main-screen
-    &__title
-      font-size: 30px
-      line-height: 30px
-
     &__author
       margin-bottom: 50px
 
@@ -802,6 +857,7 @@
     &__top
       flex-direction: column
       align-items: flex-start
+
       &-title
         margin-bottom: 20px
 
@@ -809,10 +865,13 @@
       //min-height: 310px
       &__message
         min-height: 90px
+
       &__button
         margin-left: 0
+
         &__text
           margin-right: 0
+
         &__image
           display: none
 

@@ -126,11 +126,13 @@ $(document).ready(function () {
         messages: {
             comment: {
                 required: "Пожалуйста, напишите свой комментарий",
+                minlength: "Минимальное количество символов 100"
             }
         }
     });
 
     // AOS.init();
+
 
 
 //Слайдер

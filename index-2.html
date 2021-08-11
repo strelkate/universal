@@ -8,8 +8,6 @@
     <title>Universal - Сайт для Web-разработчиков</title>
     <link rel="shortcut icon" href="/universal/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/universal/favicon.ico" type="image/x-icon">
-    <!--    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@700&display=swap"-->
-    <!--          rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="sass/swiper-bundle.min.css">
@@ -36,7 +34,7 @@
             <!-- /.navbar-wrapper__left -->
             <ul class="navbar-menu navbar-menu-2">
                 <li class="navbar-menu__item"><a href="#other-articles" class="navbar-menu__link-2">Статьи</a></li>
-                <li class="navbar-menu__item"><a href="#list-news" class="navbar-menu__link-2">Новости</a></li>
+                <li class="navbar-menu__item"><a href="#start-screen" class="navbar-menu__link-2">Новости</a></li>
                 <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">Курсы</a></li>
                 <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">HTML</a></li>
                 <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link-2">CSS</a></li>
@@ -50,7 +48,7 @@
     <!-- /.container -->
 </header>
 
-<section class="start-screen">
+<section id="start-screen" class="start-screen">
     <div class="swiper-container start-screen__slider">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper start-screen__content">
@@ -625,7 +623,7 @@
                     <div class="comments-textarea__content">
                         <h3 class="comments-textarea__title">Что вы думаете на этот счет? </h3>
                         <form action="send.php" method="POST" class="comments-textarea__form">
-                            <textarea name="comment" class="comments-textarea__message" required="required"></textarea>
+                            <textarea name="comment" class="comments-textarea__message" required="required" minlength="100"></textarea>
                             <button class="button comments-textarea__button">
                                 <span class="comments-textarea__button__text">Отправить</span>
                                 <img src="img/arrow.svg" alt="Icon: arrow" class="comments-textarea__button__image">
@@ -747,7 +745,7 @@
                     <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Контакты</a></li>
                     <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Работа у нас</a></li>
                     <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Реклама</a></li>
-                    <li data-toggle=modal class="footer__bottom-item"><a href="#" class="footer__bottom-link">Обратная
+                    <li data-toggle=modal class="footer__bottom-item"><a class="footer__bottom-link">Обратная
                         связь</a></li>
                 </ul>
             </div>
@@ -830,7 +828,9 @@
     <!-- /.modal__dialog -->
 </div>
 <!-- /.modal -->
-
+<a href="#" class="to-top">
+    <img src="img/return.png" alt="Наверх">
+</a>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script defer src="js/swiper-bundle.min.js"></script>
