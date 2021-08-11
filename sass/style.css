@@ -1779,14 +1779,14 @@ template {
 }
 .footer__line-color-greyblue {
   height: 5px;
-  width: 100%;
+  width: 84%;
   background-color: #6E99AE;
 }
 .footer__grid {
   padding-top: 30px;
   padding-bottom: 50px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 14.5%;
   grid-template-rows: repeat(1, 1fr);
 }
 .footer__news, .footer__articles, .footer__video-lessons, .footer__courses, .footer__information, .footer__categories {
@@ -2044,7 +2044,7 @@ template {
 }
 
 .start-screen {
-  padding-top: 72px;
+  padding-top: 70px;
   background-color: #ffffff;
 }
 .start-screen__content {
@@ -2725,6 +2725,9 @@ template {
   color: #4B5157;
   margin-bottom: 15px;
 }
+.comments__description-3 {
+  margin-bottom: 48px;
+}
 .comments__bottom {
   display: flex;
   align-items: center;
@@ -2768,6 +2771,7 @@ template {
   padding: 15px 0;
   margin-bottom: 60px;
   cursor: pointer;
+  margin-left: 31px;
 }
 .comments__loading:hover {
   text-decoration: underline;
