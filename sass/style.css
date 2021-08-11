@@ -1231,7 +1231,7 @@ template {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background: url("../img/news-bg.jpeg");
+  background: url("../img/news-bg.jpg");
 }
 .news-parallax:before {
   content: "";
