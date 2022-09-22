@@ -1,0 +1,80 @@
+.navbar
+  padding-top: 10px
+  padding-bottom: 15px
+  background-color: $dark
+  position: fixed
+  width: 100%
+  z-index: 50
+
+  &-2
+    padding-top: 10px
+    padding-bottom: 10px
+    position: fixed
+    width: 100%
+    z-index: 50
+    background-color: white
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__menu-button
+      display: none
+      &-2
+        display: none
+
+  &-menu
+    width: 540px
+    list-style-type: none
+    display: flex
+    justify-content: space-between
+    padding: 0
+
+    &__link
+      text-decoration: none
+      color: $light
+      font-family: "LatoBlack", sans-serif
+      font-size: 14px
+      line-height: 20px
+
+      &-2
+        font-style: normal
+        font-family: "LatoBlack", sans-serif
+        font-size: 14px
+        line-height: 20px
+        text-align: right
+        color: #939699
+      &-2:hover
+        text-decoration: underline
+
+    &__link:hover
+      text-decoration: underline
+
+.logo
+  width: 163px
+  &-dark
+    width: 163px
+    display: flex
+    align-items: center
+    &__image
+      width: 40px
+      height: 40px
+      margin-right: 10px
+
+.button-feedback
+  padding: 10px 62px
+  background-color: #656B70
+  border-radius: 10px
+  color: $light
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  text-transform: uppercase
+  border: none
+  cursor: pointer
+  outline: none
+.button-feedback:hover
+  background-color: #5c6065
+
+

@@ -1,0 +1,97 @@
+.articles
+  &-2
+    padding-top: 25px
+
+  &-finish
+    background-color: $light
+
+  &__paragraph
+    &-bold
+      font-family: "RobotoSlabBold", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $dark
+      margin-top: 81px
+      margin-bottom: 44px
+      position: relative
+      z-index: 1
+      &:after
+        content: ''
+        position: absolute
+        width: 70px
+        height: 70px
+        left: -21px
+        top: -20px
+        background-image: url("../img/quote.svg")
+        background-repeat: no-repeat
+        z-index: -1
+
+  &__tags
+    display: flex
+    margin-top: 45px
+    &-item
+      font-style: normal
+      font-family: "LatoBlack", sans-serif
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      padding: 4px 13px
+      border: 1px solid $line
+      border-radius: 5px
+      margin-right: 10px
+      margin-bottom: 15px
+      cursor: pointer
+
+  &-material
+    max-width: 264px
+    margin-top: 153px
+    &__content
+      display: flex
+      flex-direction: column
+    &__title
+      font-family: "RobotoSlabBold", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $dark
+      margin: 0
+      margin-bottom: 20px
+
+    &__image
+      height: 180px
+      object-fit: cover
+      margin-bottom: 15px
+      border-radius: 10px
+    &__subtitle
+      font-family: "RobotoSlabBold", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $dark
+      margin-bottom: 5px
+    &__description
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      margin-bottom: 20px
+    &__bottom
+      display: flex
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+    &__icon
+      &-eye
+        margin-right: 5px
+      &-comment
+        margin-right: 5px
+    &__number
+      &-eye
+        margin-right: 10px

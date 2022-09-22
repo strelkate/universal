@@ -1,0 +1,174 @@
+.footer
+  background-color: $light
+  padding-top: 70px
+
+  &__line-color
+    display: flex
+
+    &-red
+      height: 5px
+      width: 100%
+      background-color: #FF4F52
+
+    &-purple
+      height: 5px
+      width: 100%
+      background-color: #AC8EE3
+
+    &-blue
+      height: 5px
+      width: 100%
+      background-color: #4592FF
+
+    &-orange
+      height: 5px
+      width: 100%
+      background-color: #FFA34D
+
+    &-green
+      height: 5px
+      width: 100%
+      background-color: #3DC47E
+
+    &-greyblue
+      height: 5px
+      width: 84%
+      background-color: #6E99AE
+
+  &__grid
+    padding-top: 30px
+    padding-bottom: 50px
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 14.5%
+    grid-template-rows: repeat(1, 1fr)
+
+  &__news, &__articles, &__video-lessons, &__courses, &__information, &__categories
+
+    width: 100%
+    //width: 84%
+
+  &__title
+    font-family: "LatoBlack", sans-serif
+    font-size: 14px
+    line-height: 20px
+    color: $dark
+    margin: 0
+    margin-bottom: 25px
+
+  &__ul
+    padding: 0
+    margin: 0
+
+  &__item
+    list-style-type: none
+    margin-bottom: 15px
+
+  &__link
+    list-style-type: none
+    text-decoration: none
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    cursor: pointer
+  &__link:hover
+    text-decoration: underline
+
+  &__line
+    background-color: $line
+    height: 1px
+
+    //margin-top: 50px
+
+  &__logo
+    height: 50px
+    width: 50px
+    margin-right: 30px
+
+  &__bottom
+    padding-top: 30px
+    padding-bottom: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &-left
+      display: flex
+      align-items: center
+
+    &-ul
+      display: flex
+      padding: 0
+      margin: 0
+      min-width: 485px
+      justify-content: space-between
+
+    &-item
+      list-style-type: none
+
+    &-link
+      list-style-type: none
+      text-decoration: none
+      text-transform: uppercase
+      font-style: normal
+      font-family: "LatoBlack", sans-serif
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+      cursor: pointer
+
+    &-link:hover
+      text-decoration: underline
+
+  &__icon
+    &-social-network
+      width: 205px
+      display: flex
+      justify-content: space-between
+
+    &-facebook, &-twitter, &-youtube, &-instagram
+      margin: 0
+      position: absolute
+      top: 50%
+      left: 50%
+      margin-right: -50%
+      transform: translate(-50%, -50%)
+
+  &__circle
+    position: relative
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    cursor: pointer
+
+    &-facebook
+      background-color: #4267B2
+
+    &-twitter
+      background-color: #1DA1F2
+
+    &-youtube
+      background-color: #FF0000
+
+    &-instagram
+      background-color: #262626
+
+    &-facebook:hover, &-twitter:hover, &-youtube:hover, &-instagram:hover
+      opacity: 0.5
+
+  &__info
+    display: flex
+    padding-top: 40px
+    padding-bottom: 55px
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: #939699
+    justify-content: space-between
+
+    &-text
+      max-width: 750px
+
+

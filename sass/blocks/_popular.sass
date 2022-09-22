@@ -1,0 +1,45 @@
+.popular
+  margin-bottom: 30px
+
+  &__wrapper
+    display: flex
+    padding: 25px 25px 30px 25px
+    background-color: $dark
+    border-radius: 10px
+    justify-content: space-between
+
+  &__article
+    display: flex
+    align-items: center
+
+    &__content
+      display: flex
+      align-items: center
+      justify-content: flex-end
+      cursor: pointer
+
+    &__content:hover
+      text-decoration: underline
+      color: $light
+
+    &__title
+      font-style: normal
+      font-family: "LatoBlack", sans-serif
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      max-width: 156px
+      margin: 0 15px 0 0
+
+    &__image
+      width: 65px
+      height: 65px
+      object-fit: cover
+
+    &__line
+      width: 1px
+      height: 75px
+      background-color: #4B5157
+      margin-right: 25px
+      margin-left: 25px
+

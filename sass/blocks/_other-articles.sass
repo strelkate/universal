@@ -1,0 +1,43 @@
+.other
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(1, auto)
+  grid-gap: 30px
+  &-articles
+    padding-top: 60px
+    padding-bottom: 90px
+    background-color: #F5F5F5
+  &__content
+    display: flex
+    flex-direction: column
+    max-width: 263px
+  &__title
+    font-family: "RobotoSlabBold", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 25px
+    color: $dark
+    margin-bottom: 15px
+    margin-top: 0
+  &__image
+    object-fit: cover
+    border-radius: 10px
+    margin-bottom: 15px
+
+  &__bottom
+    display: flex
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+
+  &__icon
+    &-eye
+      margin-right: 5px
+    &-comment
+      margin-right: 5px
+  &__number
+    &-eye
+      margin-right: 10px

@@ -1,0 +1,88 @@
+.swiper
+  &-photo
+    background-color: $light
+  &-wrapper
+    width: 100%
+
+.photo-slider
+  border-radius: 10px
+  border: 1px solid $line
+  width: 100%
+  position: relative
+  z-index: 40
+  &__slide
+    display: flex
+    flex-direction: column
+  &__image
+    width: 100%
+    height: 555px
+    object-fit: cover
+  &__button
+    width: 60px
+    height: 60px
+    position: absolute
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+    background-color: transparent
+    top: 248px
+    z-index: 42
+    border: none
+    &-prev
+      left: 35px
+      background-image: url("../img/slider-photo-arrow-prev.svg")
+    &-next
+      right: 35px
+      background-image: url("../img/slider-photo-arrow-next.svg")
+
+  &__bottom
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &-info
+      padding: 25px 35px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+      margin: 0
+
+    &-about
+      display: flex
+
+  &__line-vertical
+    width: 1px
+    background-color: $line
+
+  &__author
+    padding: 12px 35px 13px 30px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &-avatar
+      border-radius: 50%
+      width: 45px
+      height: 45px
+      object-fit: cover
+      margin-right: 10px
+
+    &-info
+      display: flex
+      flex-direction: column
+
+    &-name
+      width: 142px
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $text-color
+    &-position
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+

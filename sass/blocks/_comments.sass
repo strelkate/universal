@@ -1,0 +1,242 @@
+.comments
+  padding-top: 90px
+  background-color: $light
+
+  &__wrapper
+    max-width: 750px
+    padding-bottom: 31px
+
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 29px
+
+    &-title
+      display: flex
+      align-items: center
+
+      &-text
+        font-family: "RobotoSlabBold", sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 40px
+        line-height: 50px
+        color: $dark
+        margin: 0 10px 0 0
+
+      &-amount
+        font-style: normal
+        font-weight: normal
+        font-size: 40px
+        line-height: 50px
+        text-transform: uppercase
+        color: #939699
+
+    &-button
+      display: flex
+      align-items: center
+      border: 1px solid $line
+      border-radius: 20px
+      padding: 10px 20px
+      justify-content: space-between
+
+    &-button:hover
+      text-decoration: underline
+
+    &-text
+      font-style: normal
+      font-family: "LatoBlack", sans-serif
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+
+    &-icon-pencil
+      margin-right: 4px
+
+  &__list
+    list-style-type: none
+    padding: 0
+
+  &__line
+    height: 1px
+    background-color: $line
+    &-invisible
+      display: none
+      &-active
+        display: flex
+
+  &__item
+    display: flex
+    align-items: flex-start
+    margin-top: 20px
+    margin-bottom: 29px
+
+    &-invisible
+      display: none
+      &-active
+        display: flex
+
+    &-2
+      margin-left: 90px
+
+  &__avatar
+    width: 75px
+    height: 75px
+    object-fit: cover
+    margin-right: 15px
+    border-radius: 50%
+
+  &__content
+    max-width: 570px
+
+    &-top
+      display: flex
+      align-items: center
+      margin-bottom: 10px
+
+      &__name
+        font-family: "RobotoSlabBold", sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 16px
+        line-height: 25px
+        color: $dark
+        margin-right: 10px
+
+      &__date
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: #939699
+
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: $text-color
+    margin-bottom: 15px
+    &-3
+      margin-bottom: 48px
+
+  &__bottom
+    display: flex
+    align-items: center
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $dark
+
+  &__icon
+    &-comment
+      margin-right: 5px
+
+    &-thumb-top
+      margin-right: 10px
+
+    &-loading
+      margin-right: 7px
+
+  &__text
+    &-comment
+      margin-right: 15px
+
+  &__number
+    &-thumb
+      font-family: "LatoBlack", sans-serif
+      margin-right: 10px
+
+      &-1
+        color: #3DC47E
+
+      &-2, &-4
+        color: #939699
+
+      &-3
+        color: #FF4F52
+
+  &__loading
+    border: 1px solid #D9DADB
+    border-radius: 25px
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 15px 0
+    margin-bottom: 60px
+    cursor: pointer
+    margin-left: 31px
+  &__loading:hover
+    text-decoration: underline
+    &-text
+      font-style: normal
+      font-family: "LatoBlack", sans-serif
+      font-size: 14px
+      line-height: 20px
+      color: $dark
+
+  &-textarea
+    background-color: #F5F5F5
+    border-radius: 10px
+    position: relative
+    z-index: 1
+    width: 100%
+    //padding: 30px 40px 90px 30px
+    min-height: 290px
+
+    &__wrapper
+      position: absolute
+      z-index: 2
+      display: flex
+      align-items: flex-start
+      padding: 30px 40px 35px 30px
+      width: 100%
+
+    &__avatar
+      width: 75px
+      height: 75px
+      object-fit: cover
+      border-radius: 50%
+      margin-right: 10px
+      margin-top: 40px
+
+    &__content
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+
+    &__title
+      font-family: "RobotoSlabBold", sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 20px
+      line-height: 25px
+      color: $dark
+      margin: 0 0 15px 12px
+
+    &__message
+      min-height: 130px
+      background: url("../img/shape.svg")
+      background-repeat: no-repeat
+      border: none
+      outline: none
+      resize: none
+      padding: 10px 25px
+      width: 100%
+      margin-bottom: 15px
+
+    &__button
+      margin-left: 14px
+
+      &__text
+        margin-right: 5px
+
+    &__form
+      width: 100%
+
+.comments__top-button:hover
+
+  color: $text-color

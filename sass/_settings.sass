@@ -1,0 +1,133 @@
+html
+  scroll-behavior: smooth
+
+*
+  box-sizing: border-box
+
+@font-face
+  font-family: "LatoBlack"
+  src: url("../font/latoblack.woff") format("woff"), url("../font/latoblack.woff2") format("woff2")
+  font-style: normal
+  font-weight: 900
+
+@font-face
+  font-family: "LatoRegular"
+  src: url("../font/latoregular.woff") format("woff"), url("../font/latoregular.woff2") format("woff2")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: "RobotoSlabBold"
+  src: url("../font/robotoslabbold.woff") format("woff"), url("../font/robotoslabbold.woff2") format("woff2")
+  font-weight: 700
+  font-style: normal
+
+body
+  font-family: "LatoRegular", sans-serif
+  background-color: $secondary
+  color: $text-color
+
+.container
+  max-width: 1140px
+  margin: auto
+
+  &-2
+    max-width: 946px
+    margin: auto
+
+img
+  max-width: 100%
+
+.button
+  //min-width: 154px
+  font-family: "LatoBlack", sans-serif
+  min-height: 40px
+  padding: 10px 20px
+  font-style: normal
+  //font-weight: bold
+  font-size: 14px
+  line-height: 20px
+  color: $light
+  background-color: $primary
+  border-radius: 20px
+  border: none
+  cursor: pointer
+  outline: none
+
+.button:hover
+  background-color: #3586ff
+
+.input
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: #939699
+  border-radius: 5px
+  border: 1px solid $line
+  padding: 10px 15px
+  min-height: 40px
+  outline: none
+
+.message
+  resize: none
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 20px
+  color: #939699
+  border-radius: 5px
+  border: 1px solid $line
+  padding: 10px 15px
+  outline: none
+
+.invalid
+  color: $primary
+
+#email-error, #modal__select-error, #message-error, #horns-error, #email__modal-error, #comment-error
+  color: $primary
+  font-style: normal
+  font-weight: normal
+  font-size: 10px
+  line-height: 0
+  position: absolute
+
+#modal__select-error
+  left: 45px
+  top: 147px
+
+#message-error
+  left: 45px
+  top: 310px
+
+#email__modal-error
+  left: 45px
+  top: 395px
+
+#horns-error
+  left: 45px
+  top: 431px
+
+#email-error
+  left: 10px
+  top: 50px
+
+#comment-error
+  left: 135px
+  top: 206px
+
+a
+  text-decoration: none
+  color: inherit
+
+.to-top
+  position: fixed
+  bottom: 20px
+  right: 20px
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08)
+  border-radius: 4px
+  border: 1px solid #eeeeee
+  background-color: #ffffff
+  padding: 18px
+
+

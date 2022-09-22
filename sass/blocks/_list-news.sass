@@ -1,0 +1,203 @@
+.list
+  padding: 0 25px 0 25px
+  background-color: $light
+  border-radius: 10px
+  list-style-type: none
+  margin: 0 30px 0 0
+
+  &-news
+    &__grid
+      display: flex
+      margin-bottom: 60px
+      align-items: flex-start
+
+  &__item
+    display: flex
+    padding: 25px 0 24px 0
+
+  &__image
+    width: 336px
+    object-fit: cover
+
+  &__content
+    padding-left: 25px
+    &-5
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 15px
+
+    &-subtitle
+      font-style: normal
+      font-family: "LatoBlack", sans-serif
+      font-size: 12px
+      line-height: 15px
+      text-transform: uppercase
+      letter-spacing: 0.5px
+
+      &-1
+        color: #4592FF
+
+      &-2, &-4
+        color: #3BBDC4
+
+      &-3, &-5
+        color: #FF4F52
+
+      &-6
+        color: #AC8EE3
+
+  &__title
+    font-family: "RobotoSlabBold", sans-serif
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 25px
+    color: $dark
+    margin: 0 0 10px 0
+    cursor: pointer
+
+  &__title:hover
+    text-decoration: underline
+
+  &__description
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 20px
+    color: $text-color
+    margin-bottom: 20px
+
+  &__bottom
+    display: flex
+    align-items: center
+    bottom: 0
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: #939699
+    &-5
+      margin-bottom: 6px
+
+  &__date
+    margin-right: 9px
+
+  &__icon
+    &-bookmark
+      width: 20px
+      height: 20px
+      cursor: pointer
+      fill: #BCBFC2
+
+    &-comment
+      margin-right: 6px
+
+    &-heart
+      margin-right: 6px
+
+  &__number
+    &-comment
+      margin-right: 12px
+
+  &__line
+    height: 1px
+    width: 100%
+    background-color: $line
+
+.publications
+  background-color: $light
+  border-radius: 10px
+  min-width: 263px
+
+  &__title
+    font-style: normal
+    font-family: "LatoBlack", sans-serif
+    font-size: 14px
+    line-height: 20px
+    text-transform: uppercase
+    color: $dark
+    padding: 20px 20px 20px 25px
+    letter-spacing: 0.5px
+
+  &__list
+    list-style-type: none
+    margin: 0
+    padding: 0 25px 0 25px
+
+  &__item
+    padding: 17px 0 17px 0
+    display: flex
+    position: relative
+    z-index: 1
+
+  //&:after
+  //  content: ''
+  //  position: absolute
+  //  width: 41px
+  //  height: 50px
+  //  right: 25px
+  //  top: 20px
+  //  background-image: url("../img/number-1.png")
+  //  background-repeat: no-repeat
+  //  z-index: -1
+
+  &__image
+    width: 60px
+    height: 60px
+    object-fit: cover
+
+    &-after
+      z-index: -1
+      position: absolute
+      width: 41px
+      height: 50px
+      right: 0
+      top: 20px
+
+  &__content
+    padding-left: 10px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    cursor: pointer
+
+
+    &-title
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      display: flex
+      align-items: center
+      color: $text-color
+    &-title:hover
+      text-decoration: underline
+
+    &-time
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: #939699
+
+  &__read-more
+    padding: 11px 25px 14px 25px
+    font-style: normal
+    font-family: "LatoBlack", sans-serif
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    color: $dark
+
+  &__line
+    height: 1px
+    width: 100%
+    background-color: $line
+

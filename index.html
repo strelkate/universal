@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Universal - Сайт для Web-разработчиков</title>
+    <link rel="shortcut icon" href="/universal/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/universal/favicon.ico" type="image/x-icon">
+<!--    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"-->
+<!--          rel="stylesheet">-->
+    <link rel="stylesheet" href="sass/swiper-bundle.min.css">
+    <link rel="stylesheet" href="sass/pagination.min.css">
+<!--    <link rel="stylesheet" href="sass/style.min.css">-->
+    <link rel="stylesheet" href="sass/style.css">
+
+</head>
+<body>
+<header class="navbar">
+    <div class="container">
+        <div class="navbar-wrapper">
+            <div class="navbar-wrapper__left">
+                <button class="menu-button navbar-wrapper__menu-button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </button>
+
+                <a href="index.html" class="logo">
+                    <img src="img/light-logo.svg" alt="Logo: Universal" class="logo__image">
+                </a>
+            </div>
+            <!-- /.navbar-wrapper__left -->
+            <ul class="navbar-menu">
+                <li class="navbar-menu__item"><a href="#grid" class="navbar-menu__link">Статьи</a></li>
+                <li class="navbar-menu__item"><a href="#list-news" class="navbar-menu__link">Новости</a></li>
+                <li class="navbar-menu__item"><a href="#table-articles" class="navbar-menu__link">Горячее</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">HTML</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">CSS</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">JavaScript</a></li>
+                <li class="navbar-menu__item"><a href="#footer" class="navbar-menu__link">Web Design</a></li>
+            </ul>
+            <button data-toggle=modal class="button-feedback">Оставить заявку</button>
+        </div>
+        <!-- /.navbar-wrapper -->
+    </div>
+    <!-- /.container -->
+</header>
+<section class="main-screen">
+    <div class="container">
+        <div class="main-screen-card">
+            <ul class="main-screen__content">
+                <li id="tab-0" class="main-screen__left main-screen__left-active">
+                    <picture>
+                        <source srcset="img/photo-tab-0.jpg" type="img/jpg">
+                        <img src="img/photo-tab-0.jpg" alt="Photo: photo tab 0" class="main-screen__photo">
+                    </picture>
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__author">
+                            <img src="img/main-avatar-0.jpg" alt="Photo: avatar author"
+                                 class="main-screen__author__image">
+                            <div class="main-screen__author__about">
+                                <span class="main-screen__author__name">Давид Гуров</span>
+                                <span class="main-screen__author__position">Разработчик</span>
+                            </div>
+                        </div>
+                        <!-- /.author -->
+                        <span class="main-screen__subtitle">Javascript</span>
+                        <h1 class="main-screen__title">Расширение Chrome<br>защищает от атак</h1>
+                        <a href="article-first.html" class="button main-screen__button">
+                            <span class="main-screen__button__text">Читать далее</span>
+                            <img src="img/arrow.svg" alt="Icon: arrow" class="main-screen__button__image">
+                        </a>
+                    </div>
+                    <!-- /.main-screen__wrapper -->
+                </li>
+                <!-- /.main-screen__left-active -->
+                <li id="tab-1" class="main-screen__left">
+                    <img src="img/photo-tab-1.jpg" alt="Photo: photo tab 1" class="main-screen__photo " loading="lazy" >
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__author">
+                            <img src="img/main-avatar-1.jpg" alt="Photo: Флора Мелтон"
+                                 class="main-screen__author__image">
+                            <div class="main-screen__author__about">
+                                <span class="main-screen__author__name">Флора Мелтон</span>
+                                <span class="main-screen__author__position">Разработчик</span>
+                            </div>
+                        </div>
+                        <!-- /.author -->
+                        <span class="main-screen__subtitle">css</span>
+                        <h2 class="main-screen__title">Как использовать CSS float после того, как вышел Flexbox</h2>
+                        <a href="article-first.html" class="button main-screen__button">
+                            <span class="main-screen__button__text">Читать далее</span>
+                            <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                        </a>
+                    </div>
+                    <!-- /.main-screen__wrapper -->
+                </li>
+                <!-- /.main-screen__left -->
+                <li id="tab-2" class="main-screen__left">
+                    <img src="img/photo-tab-2.jpg" alt="Photo: photo tab 2" class="main-screen__photo " loading="lazy" >
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__author">
+                            <img src="img/main-avatar-2.jpg" alt="Photo: Бернис Джонс"
+                                 class="main-screen__author__image">
+                            <div class="main-screen__author__about">
+                                <span class="main-screen__author__name">Бернис Джонс</span>
+                                <span class="main-screen__author__position">Разработчик</span>
+                            </div>
+                        </div>
+                        <!-- /.author -->
+                        <span class="main-screen__subtitle">Javascript</span>
+                        <h2 class="main-screen__title">На каком стандарте писать скрипты, если я фрилансер</h2>
+                        <a href="article-first.html" class="button main-screen__button">
+                            <span class="main-screen__button__text">Читать далее</span>
+                            <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                        </a>
+                    </div>
+                    <!-- /.main-screen__wrapper -->
+                </li>
+                <!-- /.main-screen__left -->
+                <li id="tab-3" class="main-screen__left">
+                    <img src="img/photo-tab-3.jpg"  alt="Photo: photo tab 3" class="main-screen__photo " loading="lazy" >
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__author">
+                            <img src="img/main-avatar-3.jpg" alt="Photo: Джошуа Баркер"
+                                 class="main-screen__author__image">
+                            <div class="main-screen__author__about">
+                                <span class="main-screen__author__name">Джошуа Баркер</span>
+                                <span class="main-screen__author__position">Разработчик</span>
+                            </div>
+                        </div>
+                        <!-- /.author -->
+                        <span class="main-screen__subtitle">html</span>
+                        <h2 class="main-screen__title">Правильно вставляем картинку на сайт для Retina дисплея</h2>
+                        <a href="article-first.html" class="button main-screen__button">
+                            <span class="main-screen__button__text">Читать далее</span>
+                            <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                        </a>
+                    </div>
+                    <!-- /.main-screen__wrapper -->
+                </li>
+                <!-- /.main-screen__left -->
+                <li id="tab-4" class="main-screen__left">
+                    <img src="img/photo-tab-4.jpg" alt="Photo: photo tab 4" class="main-screen__photo " loading="lazy" >
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__author">
+                            <img src="img/main-avatar-4.jpg" alt="Photo: Аллен Дуглас"
+                                 class="main-screen__author__image">
+                            <div class="main-screen__author__about">
+                                <span class="main-screen__author__name">Аллен Дуглас</span>
+                                <span class="main-screen__author__position">Разработчик</span>
+                            </div>
+                        </div>
+                        <!-- /.author -->
+                        <span class="main-screen__subtitle">Web design</span>
+                        <h2 class="main-screen__title">ТОП-10 плагинов для Figma</h2>
+                        <a href="article-first.html" class="button main-screen__button">
+                            <span class="main-screen__button__text">Читать далее</span>
+                            <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                        </a>
+                    </div>
+                    <!-- /.main-screen__wrapper -->
+                </li>
+                <!-- /.main-screen__left -->
+                <li id="tab-5" class="main-screen__left">
+                    <img src="img/photo-tab-5.jpg" alt="Photo: photo tab 5" class="main-screen__photo " loading="lazy" >
+                    <div class="main-screen__wrapper">
+                        <div class="main-screen__author">
+                            <img src="img/main-avatar-5.jpg" alt="Photo: avatar author"
+                                 class="main-screen__author__image">
+                            <div class="main-screen__author__about">
+                                <span class="main-screen__author__name">Мэдлин Шорт</span>
+                                <span class="main-screen__author__position">Разработчик</span>
+                            </div>
+                        </div>
+                        <!-- /.author -->
+                        <span class="main-screen__subtitle">css</span>
+                        <h2 class="main-screen__title">Возможности CSS Grid Layout , которые уже можно применять</h2>
+                        <a href="article-first.html" class="button main-screen__button">
+                            <span class="main-screen__button__text">Читать далее</span>
+                            <img src="img/arrow.svg" alt="" class="main-screen__button__image">
+                        </a>
+                    </div>
+                    <!-- /.main-screen__wrapper -->
+                </li>
+                <!-- /.main-screen__left -->
+            </ul>
+
+            <div class="main-screen__right">
+                <div class="main-screen__right__title">Рекомендуем</div>
+
+                <ul class="main-screen__tabs">
+                    <li data-target="#tab-1" class="main-screen__tab">
+                        <div class="main-screen__tab__line"></div>
+                        <div class="main-screen__tab__text">
+                            <div class="main-screen__tab__title main-screen__tab__title-1">css</div>
+                            <div class="main-screen__tab__description">
+                                Как использовать CSS float после того, как вышел Flexbox
+                            </div>
+                            <!-- /.main-screen__tabs__description -->
+                        </div>
+                        <!-- /.main-screen__tabs__text -->
+                        <div class="main-screen__tab__line"></div>
+                    </li>
+                    <!-- /.main-screen__tab -->
+
+                    <li data-target="#tab-2" class="main-screen__tab">
+                        <div class="main-screen__tab__text">
+                            <div class="main-screen__tab__title main-screen__tab__title-2">javascript</div>
+                            <div class="main-screen__tab__description">
+                                На каком стандарте писать скрипты, если я фрилансер
+                            </div>
+                            <!-- /.main-screen__tabs__description -->
+                        </div>
+                        <!-- /.main-screen__tabs__text -->
+                        <div class="main-screen__tab__line"></div>
+                    </li>
+                    <!-- /.main-screen__tab -->
+
+                    <li data-target="#tab-3" class="main-screen__tab">
+                        <div class="main-screen__tab__text">
+                            <div class="main-screen__tab__title main-screen__tab__title-3">html</div>
+                            <div class="main-screen__tab__description">
+                                Правильно вставляем картинку на сайт для Retina дисплея
+                            </div>
+                            <!-- /.main-screen__tabs__description -->
+                        </div>
+                        <!-- /.main-screen__tabs__text -->
+                        <div class="main-screen__tab__line"></div>
+                    </li>
+                    <!-- /.main-screen__tab -->
+
+                    <li data-target="#tab-4" class="main-screen__tab">
+                        <div class="main-screen__tab__text">
+                            <div class="main-screen__tab__title main-screen__tab__title-4">Web design</div>
+                            <div class="main-screen__tab__description">
+                                ТОП-10 плагинов для Figma
+                            </div>
+                            <!-- /.main-screen__tabs__description -->
+                        </div>
+                        <!-- /.main-screen__tabs__text -->
+                        <div class="main-screen__tab__line"></div>
+                    </li>
+                    <!-- /.main-screen__tab -->
+
+                    <li data-target="#tab-5" class="main-screen__tab">
+                        <div class="main-screen__tab__text">
+                            <div class="main-screen__tab__title main-screen__tab__title-5">css</div>
+                            <div class="main-screen__tab__description">
+                                Возможности CSS Grid Layout , которые уже можно применять
+                            </div>
+                            <!-- /.main-screen__tabs__description -->
+                        </div>
+                        <!-- /.main-screen__tabs__text -->
+                    </li>
+                    <!-- /.main-screen__tab -->
+                </ul>
+            </div>
+            <!-- /.main-screen__right -->
+        </div>
+        <!-- /.main-screen-card -->
+    </div>
+    <!-- /.container -->
+</section>
+<section class="popular">
+    <div class="container">
+        <div class="popular__wrapper">
+            <div class="popular__article popular__article-1">
+                <div class="popular__article__content">
+                    <h4 class="popular__article__title">25 способов настроить&nbsp;слайдер</h4>
+                    <img src="img/popular-1.jpg" alt="Photo: article image-1" class="popular__article__image">
+                </div>
+                <!-- /.popular__article__content -->
+                <div class="popular__article__line popular__article__line-1"></div>
+            </div>
+            <!-- /.popular__article -->
+            <div class="popular__article popular__article-2">
+                <div class="popular__article__content">
+                    <div class="popular__article__title">Главные фишки фрилансера</div>
+                    <img src="img/popular-2.jpg" alt="Photo: article image-2" class="popular__article__image">
+                </div>
+                <!-- /.popular__article__content -->
+                <div class="popular__article__line popular__article__line-2"></div>
+            </div>
+            <!-- /.popular__article -->
+            <div class="popular__article popular__article-3">
+                <div class="popular__article__content">
+                    <div class="popular__article__title popular__article__title-3">
+                        Техника управления временем “Помодоро”
+                    </div>
+                    <img src="img/popular-3.jpg" alt="Photo: article image-3" class="popular__article__image">
+                </div>
+                <!-- /.popular__article__content -->
+                <div class="popular__article__line popular__article__line-3"></div>
+            </div>
+            <!-- /.popular__article -->
+            <div class="popular__article popular__article-4">
+                <div class="popular__article__content">
+                    <div class="popular__article__title">Что нужно знать о Git и GitHub</div>
+                    <img src="img/popular-4.jpg" alt="Photo: article image-4" class="popular__article__image">
+                </div>
+                <!-- /.popular__article__content -->
+            </div>
+            <!-- /.popular__article -->
+        </div>
+        <!-- /.popular__wrapper -->
+    </div>
+</section>
+<section id="grid" class="grid">
+    <div class="container">
+        <div class="grid-wrapper">
+            <div class="grid__card grid__card-1">
+                <div class="grid__content-1">
+
+                    <div class="grid__content-1-text">
+                        <span class="grid__subtitle grid__subtitle-1">Статьи</span>
+                        <h3 class="grid__title grid__title-1">Вам предложили работу мечты, но вы не можете...</h3>
+                        <div class="grid__description grid__description-1">
+                            Как поступить, если хочется пойти на работу мечты, но она находится в другом городе. У вас
+                            семья
+                            и переезжать вы не готовы.
+                        </div>
+                    </div>
+                    <!-- /.grid__content-1-text -->
+                    <img src="img/car.jpg" alt="Photo: car" class="grid__image-1">
+
+                </div>
+                <div class="grid__line"></div>
+                <div class="grid__bottom-1">
+                    <img src="img/main-avatar-5.jpg" alt="Photo: avatar" class="grid__avatar-1">
+                    <span class="grid__name-1">Инна Квашова:</span>
+                    <span class="grid__text-1">Каждый разработчик мечтает переехать в...</span>
+                    <div class="grid__comment-1">
+                        <img src="img/comment.svg" alt="Icon: comment" class="grid__icon-comment">
+                        <span class="grid__number-1">342</span>
+                    </div>
+                </div>
+                <!-- /.grid__content-1 -->
+            </div>
+            <div class="grid__card grid__card-2">
+                <div class="grid__content-2">
+                    <span class="grid__label-2">Популярное</span>
+                    <span class="grid__subtitle grid__subtitle-2">Web design</span>
+                    <img src="img/bulb.jpg" alt="Photo: buld" class="grid__image-2">
+                    <div class="grid__title grid__title-2">Где взять реальные проекты для портфолио</div>
+                </div>
+                <div class="grid__bottom-2">
+                    <img src="img/main-avatar-5.jpg" alt="" class="grid__avatar-2">
+                    <div class="grid__bottom-2-text">
+                        <span class="grid__name-2">Сара Женникова</span>
+                        <div class="grid__bottom-2-info">
+                            <span class="grid__date-2">25 сентября</span>
+                            <img src="img/comment-2.svg" alt="Icon: comment" class="grid__icon-comment">
+                            <span class="grid__number-comment-2">16</span>
+                            <img src="img/heart-2.svg" alt="Icon: heart" class="grid__icon-heart">
+                            <span class="grid__number-heart-2">832</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__card grid__card-3">
+                <img src="img/notebook.jpg" alt="Photo: notebook" class="grid__image-3">
+                <div class="grid__title grid__title-3">20+ инструментов<br>для js-разработчика</div>
+            </div>
+            <div class="grid__card grid__card-4">
+                <div class="grid__card-4-text">
+                    <div class="grid__title grid__title-4">Удачные референсы</div>
+                    <div class="grid__description">
+                        Как выбрать подходящие исходники, если вы ищите идею для интерфейса
+                    </div>
+                </div>
+                <div class="grid__date">15 октября</div>
+            </div>
+            <div class="grid__card grid__card-5">
+                <div class="grid__card-5-text">
+                    <div class="grid__title grid__title-5">Заказчики — мудаки?</div>
+                    <div class="grid__description">
+                        Как защититься от бесконечных правок на этапе сдачи проекта
+                    </div>
+                </div>
+                <div class="grid__date">20 октября</div>
+            </div>
+            <div class="grid__card grid__card-6">
+                <div class="grid__card-6-text">
+                    <div class="grid__title grid__title-6">Работа без стресса — это...</div>
+                    <div class="grid__description">
+                        Обустройте свое рабочее место так, чтобы не испытывать раздражение от скрипучего...
+                    </div>
+                </div>
+                <div class="grid__date">26 октября</div>
+            </div>
+            <div class="grid__card grid__card-7">
+                <div class="grid__card-7-text">
+                    <div class="grid__title grid__title-7">Бесплатные методы...</div>
+                    <div class="grid__description">
+                        Как не платить за софт, если у вас есть студенческий билет высшего учебного заведения
+                    </div>
+                </div>
+                <div class="grid__date">13 октября</div>
+            </div>
+            <div class="grid__card grid__card-download">
+                <div class="grid__title grid__title-download">Чек-лист сдачи верстки вашему заказчику</div>
+                <div class="grid__subtitle grid__subtitle-download">PDF, 125 Мб</div>
+                <div class="grid__line grid__line-download"></div>
+                <a href="img/smiley-face.jpeg" download class="grid__bottom-download">
+                    <img src="img/download.svg" alt="Icon: download" class="grid__icon-download">
+                    <span class="grid__text-download">Скачать</span>
+                </a>
+            </div>
+            <div class="grid__card grid__card-tag">
+                <div class="grid__title-tag">теги</div>
+                <div class="grid__line"></div>
+                <div class="grid__tags">
+                    <span class="grid__tags-item">Forest</span>
+                    <span class="grid__tags-item">Hover tag</span>
+                    <span class="grid__tags-item">Nature</span>
+                    <span class="grid__tags-item">Recreation</span>
+                    <span class="grid__tags-item">Tent</span>
+                    <span class="grid__tags-item">Fresh air</span>
+                    <span class="grid__tags-item">Summer</span>
+                    <span class="grid__tags-item">Mountains</span>
+                    <span class="grid__tags-item">Wood</span>
+                    <span class="grid__tags-item">Map</span>
+                    <span class="grid__tags-item">Sun</span>
+                    <span class="grid__tags-item">Wild animals</span>
+                    <span class="grid__tags-item">Night</span>
+
+
+                </div>
+            </div>
+            <div class="grid__card grid__card-social-network">
+                <div class="grid__title grid__title-social-network">Наши соцсети</div>
+                <div class="grid__icon-social-network">
+                    <a href="https://ru-ru.facebook.com/" target="_blank" class="grid__circle grid__circle-facebook">
+                        <img src="img/facebook.svg" alt="Icon: facebook" class="grid__icon-facebook">
+                    </a>
+                    <a href="https://twitter.com/?lang=ru" target="_blank" class="grid__circle grid__circle-twitter">
+                        <img src="img/twitter.svg" alt="Icon: twitter" class="grid__icon-twitter">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="grid__circle grid__circle-youtube">
+                        <img src="img/youtube.svg" alt="Icon: youtube" class="grid__icon-youtube">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+<section class="news">
+    <!--   <div class="news-parallax" data-parallax="scroll" data-image-src="img/news-bg.jpeg">-->
+    <div class="news-parallax">
+        <div class="news-wrapper">
+            <h2 class="news-title">Расследование недели: сколько зарабатывает веб разработчик в Москве</h2>
+            <a href="article-first.html" class="button news__button">
+                <span class="news__button__text">Читать далее</span>
+                <img src="img/arrow.svg" alt="" class="news__button__image">
+            </a>
+        </div>
+        <!-- /.news-wrapper -->
+    </div>
+</section>
+<section id="list-news" class="list-news">
+    <div class="container">
+        <div class="list-news__grid">
+            <ul class="list">
+
+                <li class="list__item">
+                    <img src="img/list-item-1.jpg" alt="Photo: list item" class="list__image " loading="lazy" >
+                    <div class="list__content">
+                        <div class="list__top">
+                            <div class="list__top-subtitle list__top-subtitle-1">Новости</div>
+                            <svg class="list__icon-bookmark" width="20" height="20" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                                />
+                            </svg>
+                        </div>
+                        <!-- /.list__top -->
+                        <div class="list__text">
+                            <h3 class="list__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h3>
+                            <div class="list__description">
+                                Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает
+                                неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.
+                            </div>
+                            <!-- /.list__description -->
+
+                        </div>
+                        <!-- /.list__text -->
+                        <div class="list__bottom">
+                            <span class="list__date">6 августа</span>
+                            <img src="img/comment.svg" alt="Icon: comment" class="list__icon-comment">
+                            <span class="list__number-comment">342</span>
+                            <img src="img/heart.svg" alt="Icon: heart" class="list__icon-heart">
+                            <span class="list__number-heart">830</span>
+                        </div>
+                        <!-- /.list__bottom -->
+                    </div>
+                    <!-- /.list__content -->
+                </li>
+                <li class="list__line"></li>
+
+                <li class="list__item">
+                    <img src="img/list-item-2.jpg"  alt="Photo: list item" class="list__image " loading="lazy" >
+                    <div class="list__content">
+                        <div class="list__top">
+                            <div class="list__top-subtitle list__top-subtitle-2">Мнения</div>
+                            <svg class="list__icon-bookmark" width="20" height="20" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                                />
+                            </svg>
+                        </div>
+                        <!-- /.list__top -->
+                        <div class="list__text">
+                            <h3 class="list__title">Платные курсы — это не быстрый способ выйти на нужный уровень</h3>
+                            <div class="list__description">
+                                Среди новичков распространено мнение, что если пройти какой-то крутой онлайн-курс, то
+                                это решит все проблемы. Но они не&nbsp;берут в расчет, что лучшее обучение — это практика.
+                            </div>
+                            <!-- /.list__description -->
+
+                        </div>
+                        <!-- /.list__text -->
+                        <div class="list__bottom">
+                            <span class="list__date">7 октября</span>
+                            <img src="img/comment.svg" alt="Icon: comment" class="list__icon-comment">
+                            <span class="list__number-comment">27</span>
+                            <img src="img/heart.svg" alt="Icon: heart" class="list__icon-heart">
+                            <span class="list__number-heart">129</span>
+                        </div>
+                        <!-- /.list__bottom -->
+                    </div>
+                    <!-- /.list__content -->
+                </li>
+                <li class="list__line"></li>
+
+                <li class="list__item">
+                    <img src="img/list-item-3.jpg" alt="Photo: list item" class="list__image " loading="lazy" >
+                    <div class="list__content">
+                        <div class="list__top">
+                            <div class="list__top-subtitle list__top-subtitle-3">Горячее</div>
+                            <svg class="list__icon-bookmark" width="20" height="20" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                                />
+                            </svg>
+                        </div>
+                        <!-- /.list__top -->
+                        <div class="list__text">
+                            <h3 class="list__title">Из-за ограничений стали недоступны серверы Telegram. К чему это
+                                может... </h3>
+                            <div class="list__description">
+                                Сегодня мы узнали, что серверы Telegram не доступны на территории России. Разобрались,
+                                чем это грозит вам, если ваш бизнес зависит от этого мессенджера.
+                            </div>
+                            <!-- /.list__description -->
+                        </div>
+                        <!-- /.list__text -->
+                        <div class="list__bottom">
+                            <span class="list__date">12 декабря</span>
+                            <img src="img/comment.svg" alt="Icon: comment" class="list__icon-comment">
+                            <span class="list__number-comment">30</span>
+                            <img src="img/heart.svg" alt="Icon: heart" class="list__icon-heart">
+                            <span class="list__number-heart">284</span>
+                        </div>
+                        <!-- /.list__bottom -->
+                    </div>
+                    <!-- /.list__content -->
+                </li>
+                <li class="list__line"></li>
+
+                <li class="list__item">
+                    <img src="img/list-item-4.jpg" alt="Photo: list item" class="list__image " loading="lazy" >
+                    <div class="list__content">
+                        <div class="list__top">
+                            <div class="list__top-subtitle list__top-subtitle-4">Мнения</div>
+                            <svg class="list__icon-bookmark" width="20" height="20" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                                />
+                            </svg>
+                        </div>
+                        <!-- /.list__top -->
+                        <div class="list__text">
+                            <h3 class="list__title">В вашем портфолио могут быть фейковые проекты, если вы
+                                сделали...</h3>
+                            <div class="list__description">
+                                Один из читателей предположил, что если в портфолио положить несуществующий проект, то
+                                ничего страшного не произойдет. Он провел эксперимент и потенциальные заказчики...
+                            </div>
+                            <!-- /.list__description -->
+                        </div>
+                        <!-- /.list__text -->
+                        <div class="list__bottom">
+                            <span class="list__date">20 июля</span>
+                            <img src="img/comment.svg" alt="Icon: comment" class="list__icon-comment">
+                            <span class="list__number-comment">102</span>
+                            <img src="img/heart.svg" alt="Icon: heart" class="list__icon-heart">
+                            <span class="list__number-heart">1,293</span>
+                        </div>
+                        <!-- /.list__bottom -->
+                    </div>
+                    <!-- /.list__content -->
+                </li>
+                <li class="list__line"></li>
+
+                <li class="list__item">
+                    <img src="img/list-item-5.jpg" alt="Photo: list item" class="list__image " loading="lazy" >
+                    <div class="list__content list__content-5">
+                        <div>
+                            <div class="list__top">
+                                <div class="list__top-subtitle list__top-subtitle-5">Горячее</div>
+                                <svg class="list__icon-bookmark" width="20" height="20" viewBox="0 0 20 20"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                          d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                                    />
+                                </svg>
+                            </div><!---->
+                            <!-- /.list__top -->
+                            <div class="list__text">
+                                <h3 class="list__title">Список стран, куда можно улететь</h3>
+                                <div class="list__description">
+                                    Если вы приняли решение переехать в другую страну, чтобы найти там работу, сначала
+                                    посмотрите на список стран, который мы подготовили для вас. Внутри важная информация
+                                    про...
+                                </div>
+                                <!-- /.list__description -->
+                            </div>
+                            <!-- /.list__text -->
+                        </div>
+
+                        <div class="list__bottom list__bottom-5">
+                            <span class="list__date">22 октября</span>
+                            <img src="img/comment.svg" alt="Icon: comment" class="list__icon-comment">
+                            <span class="list__number-comment">5</span>
+                            <img src="img/heart.svg" alt="Icon: heart" class="list__icon-heart">
+                            <span class="list__number-heart">82</span>
+                        </div>
+                        <!-- /.list__bottom -->
+                    </div>
+                    <!-- /.list__content -->
+                </li>
+                <li class="list__line"></li>
+
+                <li class="list__item">
+                    <img src="img/list-item-6.jpg" alt="Photo: list item" class="list__image " loading="lazy" >
+                    <div class="list__content">
+                        <div class="list__top">
+                            <div class="list__top-subtitle list__top-subtitle-6">Подборки</div>
+                            <svg class="list__icon-bookmark" width="20" height="20" viewBox="0 0 20 20"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M5 1H15C16.1046 1 17 1.89543 17 3V19L10.0949 14L3 19V3C3 1.89543 3.89543 1 5 1Z"
+                                />
+                            </svg>
+                        </div>
+                        <!-- /.list__top -->
+                        <div class="list__text">
+                            <h3 class="list__title">Список Youtube каналов для тех, кто только начинает изучать
+                                разработку</h3>
+                            <div class="list__description">
+                                Мы собрали на одной странице кучу ссылок на полезные русскоязычные каналы, посвященные
+                                айти. Тут можно найти видеоуроки, лекции и бесплатные курсы.
+                            </div>
+                            <!-- /.list__description -->
+                        </div>
+                        <!-- /.list__text -->
+                        <div class="list__bottom">
+                            <span class="list__date">26 октября</span>
+                            <img src="img/comment.svg" alt="Icon: comment" class="list__icon-comment">
+                            <span class="list__number-comment">101</span>
+                            <img src="img/heart.svg" alt="Icon: heart" class="list__icon-heart">
+                            <span class="list__number-heart">432</span>
+                        </div>
+                        <!-- /.list__bottom -->
+                    </div>
+                    <!-- /.list__content -->
+                </li>
+
+            </ul>
+            <!-- /.list -->
+            <div class="publications">
+                <div class="publications__title">Недавно&nbsp;опубликовано</div>
+                <div class="publications__line"></div>
+                <ul class="publications__list">
+
+                    <li class="publications__item">
+                        <img src="img/publications-1.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Работа на удаленке, как это теперь</div>
+                            <span class="publications__content-time">15 минут назад</span>
+                            <img src="img/number-1.png" alt="number-1" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+                    <li class="publications__line"></li>
+
+                    <li class="publications__item">
+                        <img src="img/publications-2.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Для чего нужен Node.js и с чем...</div>
+                            <span class="publications__content-time">32 минуты назад</span>
+                            <img src="img/number-2.png" alt="number-2" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+                    <li class="publications__line"></li>
+
+                    <li class="publications__item">
+                        <img src="img/publications-3.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Работа в Google: собеседования и...</div>
+                            <span class="publications__content-time">38 минут назад</span>
+                            <img src="img/number-3.png" alt="number-3" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+                    <li class="publications__line"></li>
+
+                    <li class="publications__item">
+                        <img src="img/publications-4.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Переезд в Нью Йорк для работы по...</div>
+                            <span class="publications__content-time">53 минуты назад</span>
+                            <img src="img/number-4.png" alt="number-4" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+                    <li class="publications__line"></li>
+
+                    <li class="publications__item">
+                        <img src="img/publications-5.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Почему родители против того, чтобы...</div>
+                            <span class="publications__content-time">1 час назад</span>
+                            <img src="img/number-5.png" alt="number-5" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+                    <li class="publications__line"></li>
+
+                    <li class="publications__item">
+                        <img src="img/publications-6.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Прокрастинация: побороть отклады...</div>
+                            <span class="publications__content-time">1 час назад</span>
+                            <img src="img/number-6.png" alt="number-6" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+                    <li class="publications__line"></li>
+
+                    <li class="publications__item">
+                        <img src="img/publications-7.jpg" alt="Photo: publications item" class="publications__image " loading="lazy" >
+                        <div class="publications__content">
+                            <div class="publications__content-title">Правки от заказчика могут быть...</div>
+                            <span class="publications__content-time">2 часа назад</span>
+                            <img src="img/number-7.png" alt="number-7" class="publications__image-after">
+                        </div>
+                        <!-- /.__content -->
+                    </li>
+
+                </ul>
+                <div class="publications__line"></div>
+                <div class="publications__read-more">Read more</div>
+            </div>
+            <!-- /.publications -->
+        </div>
+        <!-- /.list__grid -->
+    </div>
+    <!-- /.container -->
+</section>
+<section id="table-articles" class="table-articles">
+    <div class="container">
+        <div class="table">
+            <div class="slider">
+                <div class="swiper-container table-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/slide-1.jpg" alt="Photo: slide-1" class="table-slider__image" loading="lazy">
+                            <div class="table-slider__label">Горячее</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Выбор читателей: где удобнее работать фрилансеру</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-2.jpg"  alt="Photo: slide-2" class="table-slider__image " loading="lazy" >
+                            <div class="table-slider__label">Мнения</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Платные курсы — это не быстрый способ выйти на нужный
+                                    уровень</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-3.jpg" alt="Photo: slide-3" class="table-slider__image " loading="lazy" >
+                            <div class="table-slider__label">Горячее</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Из-за ограничений стали недоступны серверы Telegram. К
+                                    чему
+                                    это может...</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-4.jpg" alt="Photo: slide-4" class="table-slider__image " loading="lazy" >
+                            <div class="table-slider__label">Мнения</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">В вашем портфолио могут быть фейковые проекты, если вы
+                                    сделали...</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide table-slider__slide">
+                            <img src="img/list-item-5.jpg" alt="Photo: slide-5" class="table-slider__image " loading="lazy" >
+                            <div class="table-slider__label">Подборки</div>
+                            <div class="table-slider__content">
+                                <img src="img/swiper-avatar-1.png" alt="Photo: " class="table-slider__avatar">
+                                <div class="table-slider__name">Оксана Пушкина</div>
+                                <div class="table-slider__position">Фотограф</div>
+                                <h2 class="table-slider__title">Список Youtube каналов для тех, кто только начинает
+                                    изучать
+                                    разработку</h2>
+                                <button class="button table-slider__button">
+                                    <img src="img/images.svg" alt="Icon: images" class="table-slider__icon-images">
+                                    <span class="table-slider__button-text">Смотреть фото</span>
+                                    <span class="table-slider__button-number">26</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                        <!--                        <div class="swiper__pagination-path"></div>-->
+                    </div>
+                </div>
+            </div>
+
+            <div class="table__right">
+                <div class="table-career">
+                    <img src="img/career.png" alt="Photo: career" class="table-career__image " loading="lazy" >
+                    <div class="table-career__wrapper">
+                        <span class="table-career__subtitle">Карьера</span>
+                        <div class="table-career__title">Вопросы на собеседовании для джуна</div>
+                        <div class="table-career__description">
+                            Каверзные и не очень вопросы, которых боятся новички, когда идут на собеседование
+                        </div>
+                        <a href="article-first.html" class="button table-career__button">
+                                <span class="table-career__button-text">Читать далее</span>
+                                <img src="img/arrow.svg" alt="" class="table-career__button-image">
+                        </a>
+                    </div>
+
+                </div>
+                <!-- /.table_career -->
+
+                <div class="table__bottom">
+                    <div class="table__card table__card-1">
+                        <div class="table__card-text">
+                            <div class="table__card-title">Зарядка для глаз</div>
+                            <div class="table__card-description">
+                                Эти несколько упражнений помогут сохранить зрение. Можно делать их даже если...
+                            </div>
+                        </div>
+                        <div class="table__card-date">15 октября</div>
+                    </div>
+                    <!-- /.table__card -->
+
+                    <div class="table__card">
+                        <div class="table__card-text">
+                            <div class="table__card-title">Топ плагинов jQuery</div>
+                            <div class="table__card-description">
+                                Какие плагины помогут быстро создать галерею, выпадающие списки или окна
+                            </div>
+                        </div>
+                        <div class="table__card-date">14 октября</div>
+                    </div>
+                    <!-- /.table__card -->
+                </div>
+                <!-- /.table__bottom -->
+
+            </div>
+            <!-- /.swiper__right -->
+
+        </div>
+        <!-- /.table -->
+    </div>
+    <!-- /.container -->
+</section>
+<section class="contact-form">
+    <div class="container">
+        <div class="contact-form__wrapper">
+            <h2 class="contact-form__title">Подпишитесь на нашу рассылку</h2>
+            <form action="send.php" method="POST" class="contact-form__form">
+                <div class="contact-form__flex-error">
+                    <input type="email" class="contact-form__input" placeholder="Email" name="email" required>
+                </div>
+                <button class="button contact-form__button">Подписаться</button>
+            </form>
+        </div>
+        <!-- /.contact-form__wrapper -->
+    </div>
+    <!-- /.container -->
+</section>
+<footer id="footer" class="footer">
+    <div class="container">
+        <div class="footer__line-color">
+            <div class="footer__line-color-red"></div>
+            <div class="footer__line-color-purple"></div>
+            <div class="footer__line-color-blue"></div>
+            <div class="footer__line-color-orange"></div>
+            <div class="footer__line-color-green"></div>
+            <div class="footer__line-color-greyblue"></div>
+        </div>
+
+        <div class="footer__grid">
+            <div class="footer__news">
+                <h4 class="footer__title">Новости</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Обновления</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Экспресс</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Politics</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Solar Eclipse</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__news -->
+
+            <div class="footer__articles">
+                <h4 class="footer__title">Статьи</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">HTML</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">CSS</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">JavaScript</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Web Design</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__articles -->
+
+            <div class="footer__video-lessons">
+                <h4 class="footer__title">Видеоуроки</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Скринкасты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Уроки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Вебинары</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__video-lessons -->
+
+            <div class="footer__courses">
+                <h4 class="footer__title">Курсы</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Платные интенсивы</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Бесплатные стримы</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Мастер-классы</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Менторство</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Буткемпы</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__courses -->
+
+            <div class="footer__information">
+                <h4 class="footer__title">Информация</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Политика данных</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Оферта сайта</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Реквизиты</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Контакты</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__information -->
+
+            <div class="footer__categories">
+                <h4 class="footer__title">Категории</h4>
+                <ul class="footer__ul">
+                    <li class="footer__item"><a href="#" class="footer__link">Популярное</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Горячее</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Подборки</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Мнения</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Карьера</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__categories -->
+        </div>
+        <!-- /.footer__content -->
+        <div class="footer__line"></div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <a href="index.html" class="footer__logo">
+                    <img src="img/footer-logo.svg" alt="Logo">
+                </a>
+                <ul class="footer__bottom-ul">
+                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Контакты</a></li>
+                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Работа у нас</a></li>
+                    <li class="footer__bottom-item"><a href="#" class="footer__bottom-link">Реклама</a></li>
+                    <li data-toggle=modal class="footer__bottom-item"><a class="footer__bottom-link">Обратная
+                        связь</a></li>
+                </ul>
+            </div>
+            <!-- /.footer__bottom-left -->
+
+            <div class="footer__social-network">
+                <div class="footer__icon-social-network">
+                    <a href="https://ru-ru.facebook.com/" target="_blank"
+                       class="footer__circle footer__circle-facebook">
+                        <img src="img/facebook.svg" alt="Icon: facebook" class="footer__icon-facebook">
+                    </a>
+
+                    <a href="https://twitter.com/?lang=ru" target="_blank"
+                       class="footer__circle footer__circle-twitter">
+                        <img src="img/twitter.svg" alt="Icon: twitter" class="footer__icon-twitter">
+                    </a>
+
+                    <a href="https://www.youtube.com/" target="_blank" class="footer__circle footer__circle-youtube">
+                        <img src="img/youtube.svg" alt="Icon: youtube" class="footer__icon-youtube">
+                    </a>
+
+                    <a href="https://www.instagram.com/?hl=ru" target="_blank"
+                       class="footer__circle footer__circle-instagram">
+                        <img src="img/instagram.svg" alt="Icon: instagram" class="footer__icon-instagram">
+                    </a>
+                </div>
+            </div>
+            <!-- /.footer__social-network -->
+        </div>
+        <!-- /.footer__bottom -->
+        <div class="footer__line"></div>
+        <div class="footer__info">
+            <div class="footer__info-text">
+                Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи,
+                новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании,
+                указывайте ссылку.
+            </div>
+            <!-- /.footer__info-text -->
+            <div class="footer__info-years">© 2020 Universal Magazine</div>
+        </div>
+        <!-- /.footer__info -->
+    </div>
+    <!-- /.container -->
+</footer>
+<div class="modal">
+    <div id="modal_overlay" class="modal__overlay"></div>
+    <!-- /.modal__overlay -->
+    <div class="modal__dialog">
+        <a href="#" class="modal__close">
+            <img src="img/close.svg" alt="icon: close">
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Обратная связь</h3>
+        <form action="send.php" method="POST" class="modal__form">
+
+            <span class="modal__subtitle">Тема</span>
+            <select class="modal__select" name="modal__select" required="required">
+                <option value="">Выберите тему</option>
+                <option value="1">Новости</option>
+                <option value="2">Мнения</option>
+                <option value="3">Горячее</option>
+                <option value="4">Подборки</option>
+                <option value="5">Статьи</option>
+            </select>
+
+            <span class="modal__subtitle">Сообщение</span>
+            <textarea class="message modal__message" placeholder="" name="message" required="required"></textarea>
+
+            <span class="modal__subtitle">Email</span>
+            <input type="email" class="input modal__input" placeholder="" name="email__modal" required>
+
+            <div class="modal__bottom">
+                <div class="modal__checkbox">
+                    <input class="modal__checkbox-button" type="checkbox" id="horns" name="horns" required="required">
+                    <label class="modal__checkbox-label" for="horns">Согласен с обработкой данных</label>
+                </div>
+                <button class="button modal__button">Отправить</button>
+            </div>
+        </form>
+    </div>
+    <!-- /.modal__dialog -->
+</div>
+<!-- /.modal -->
+<a href="#" class="to-top">
+    <img src="img/return.png" alt="Наверх">
+</a>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script defer src="js/swiper-bundle.min.js"></script>
+<script defer src="js/jquery.validate.min.js"></script>
+<script defer src="js/jquery.mask.min.js"></script>
+<script defer src="js/main.min.js"></script>
+<!--<script defer src="js/main.js"></script>-->
+<script async src="js/parallax.min.js"></script>
+<script async src="js/parallax.js"></script>
+<script async src="js/lazysizes.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,898 @@
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+
+    &-2
+      max-width: 800px
+
+  .menu
+    &-button
+      display: flex
+      width: 16px
+      height: 11px
+      padding: 0
+      align-items: center
+      justify-content: space-between
+      flex-direction: column
+      border: none
+      background-color: $dark
+      cursor: pointer
+
+      &-2
+        background-color: $light
+
+        &__line
+          background-color: $dark
+          width: 16px
+          height: 1px
+
+      &__line
+        width: 16px
+        height: 1px
+        background-color: $light
+
+  .navbar
+    &-wrapper
+      &__left
+        display: flex
+        align-items: center
+
+    &-menu
+      width: 100%
+      background-color: $dark
+      display: none
+      flex-direction: row
+      align-items: center
+      position: fixed
+      left: 0
+      right: 0
+      bottom: 0
+      top: 54px
+      z-index: 99
+
+      &-2
+        background-color: $light
+
+        &--visible
+          display: flex
+          justify-content: center
+          height: 70px
+          overflow: auto
+
+      &__item
+        margin-right: 60px
+
+      &__item:nth-last-child(1)
+        margin-right: 0
+
+      &--visible
+        display: flex
+        justify-content: center
+        height: 70px
+        overflow: auto
+  .logo
+    margin-left: 30px
+
+    &-dark
+      margin-left: 30px
+
+  .main-screen
+    &__content
+      width: 700px
+
+    &__photo
+      width: 700px
+
+    &__left
+      width: 700px
+
+      &-active
+        &:before
+          width: 700px
+
+  .grid
+    &-wrapper
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(5, auto)
+    //height: 970px
+
+    &__card
+      &-download
+        grid-row: 5 / 6
+        grid-column: 1 / 3
+
+      &-tag
+        grid-row: 6 / 7
+        grid-column: 1 / 4
+
+      &-social-network
+        grid-row: 5 / 6
+        grid-column: 3 / 4
+
+  .table
+    flex-direction: column
+
+    &__right
+      flex-direction: row
+
+    &__bottom
+      flex-direction: column
+      flex-shrink: 2
+
+    &-career
+      margin-right: 30px
+      margin-bottom: 0
+      flex-shrink: 1
+
+    &__card-1
+      margin-right: 0
+      margin-bottom: 30px
+
+    &-slider
+      width: 100%
+      height: 570px
+      margin-right: 0
+      margin-bottom: 30px
+
+      &-container
+        width: 100%
+        height: 570px
+        margin-right: 0
+        margin-bottom: 30px
+
+      &__content
+        width: 100%
+
+      &__wrapper
+        width: 100%
+
+      &__image
+        width: 100%
+
+  .start-screen
+    &__title
+      font-size: 40px
+      line-height: 55px
+
+    &__wrapper
+      max-width: 800px
+
+  .articles
+    &__text
+      max-width: 515px
+
+  .other
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(2, auto)
+
+    &__content
+      max-width: none
+      width: 100%
+
+@media (max-width: 992px)
+
+  .popular__article__content:hover
+      text-decoration: none
+  .list
+    &__title:hover
+      text-decoration: none
+  .publications__content-title:hover
+      text-decoration: none
+  .button-feedback:hover
+    background-color: #656B70
+  .navbar-menu__link:hover
+    text-decoration: none
+  .navbar-menu__link-2:hover
+    text-decoration: none
+  .main-screen__tab:hover
+    background-color: $light
+  .comments
+    &__top-button:hover, &__loading:hover
+      text-decoration: none
+  .footer
+    &__link:hover, &__bottom-link:hover
+      text-decoration: none
+
+    &__circle
+      &-facebook:hover, &-twitter:hover, &-youtube:hover, &-instagram:hover
+        opacity: 1
+  .grid
+    &__circle
+      &-facebook:hover, &-twitter:hover, &-youtube:hover
+        opacity: 1
+    &__title
+      &-1:hover, &-2:hover, &-3:hover, &-4:hover, &-5:hover, &-6:hover, &-7:hover
+        text-decoration: none
+    &__bottom
+      &-download:hover
+        text-decoration: none
+
+  .button:hover
+    background-color: $primary
+
+
+  .container
+    max-width: 700px
+
+    &-2
+      max-width: 700px
+  .logo
+    width: 140px
+
+    &-dark
+      width: 140px
+
+      &__image
+        width: 34px
+        height: 34px
+
+        &-text
+          height: 20px
+
+  .navbar
+    &-menu
+      &__item
+        margin-right: 40px
+
+  .main-screen
+    margin-bottom: 600px
+    //height: 410px
+    &__title
+      font-size: 35px
+      line-height: 40px
+
+    &__content
+      width: 100%
+
+    &__left
+      width: 100%
+      height: 455px
+
+      &:before
+        height: 455px
+
+    &-card
+      height: 1015px
+      flex-direction: column
+
+    &__wrapper
+      height: 455px
+
+    &__photo
+      border-radius: 10px 10px 0 0
+      height: 455px
+
+    &__author
+      margin-bottom: 80px
+
+    &__right
+      width: 100%
+      border-radius: 0 0 10px 10px
+
+      &__line
+        width: 100%
+
+  .popular
+    &__wrapper
+      flex-wrap: wrap
+
+    &__article
+      &__content
+        width: 300px
+        flex-direction: row-reverse
+
+      &-1, &-2
+        margin-bottom: 20px
+
+      &__line
+        margin: 0
+
+      &__line-2
+        display: none
+
+      &__title
+        max-width: 100%
+        margin-left: 10px
+
+  .grid
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(8, auto)
+    //height: 1770px
+
+    &__card
+      &-2
+        grid-row: 3 / 5
+        grid-column: 1 / 2
+
+      &-3
+        grid-row: 3 / 5
+        grid-column: 2 / 3
+
+      &-4
+        grid-row: 5 / 6
+        grid-column: 1 / 2
+
+      &-5
+        grid-row: 5 / 6
+        grid-column: 2 / 3
+
+      &-6
+        grid-row: 6 / 7
+        grid-column: 1 / 2
+
+      &-7
+        grid-row: 6 / 7
+        grid-column: 2 / 3
+
+      &-download
+        grid-row: 7 / 8
+        grid-column: 1 / 2
+
+      &-tag
+        grid-row: 8 / 9
+        grid-column: 1 / 3
+
+      &-social-network
+        grid-row: 7 / 8
+        grid-column: 2 / 3
+
+  .news
+    &-wrapper
+      width: 88%
+
+    &-title
+      font-size: 35px
+
+  .list
+    margin: 0 0 30px 0
+
+    &-news
+      &__grid
+        flex-direction: column
+  .publications
+    width: 100%
+  .table
+    &-career
+      height: auto
+  .footer
+    &__grid
+      grid-template-columns: repeat(3, 1fr)
+      grid-template-rows: repeat(2, auto)
+      row-gap: 20px
+
+    &__bottom
+      flex-direction: column
+      align-items: flex-start
+
+      &-left
+        margin-bottom: 30px
+
+    &__info
+      flex-direction: column
+
+      &-text
+        margin-bottom: 20px
+
+  .start-screen
+    &__wrapper
+      max-width: 700px
+
+    &__icon
+      &-bookmark
+        left: -30px
+
+  .articles
+    flex-direction: column-reverse
+    align-items: center
+
+    &__author
+      &-card
+        margin-bottom: 30px
+
+    &__text
+      max-width: none
+      width: 100%
+
+    &-2
+      flex-direction: column
+      align-items: flex-start
+      justify-content: space-between
+
+    &-material
+      max-width: none
+      margin-top: 45px
+
+      &__content
+        flex-direction: row
+
+      &__image
+        margin-right: 20px
+        margin-bottom: 0
+
+  .repost
+    &__line
+      width: 100%
+
+  .comments
+    &__top
+      &-title
+        &-text
+          font-size: 35px
+          line-height: 40px
+
+        &-amount
+          font-size: 35px
+          line-height: 40px
+
+    &-textarea
+      &__message
+        overflow: hidden
+
+@media (max-width: 767px)
+  .container
+    width: 88%
+
+    &-2
+      width: 88%
+
+  .logo
+    width: 120px
+
+    &-dark
+      width: 120px
+
+      &__image
+        width: 30px
+        height: 30px
+
+        &-text
+          height: 15px
+  .navbar
+    &-menu
+      &__item
+        margin-right: 20px
+
+  .button-feedback
+    padding: 10px 32px
+    font-size: 12px
+
+  .main-screen
+    &__left
+      &:before
+        width: 100%
+
+    &__photo
+      object-fit: cover
+      height: 455px
+  .popular
+    &__article
+      &__content
+        width: 380px
+
+      &__title
+        margin-right: 3px
+
+      &-3
+        margin-bottom: 20px
+
+      &__line
+        display: none
+
+  .grid
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(1, 1fr)
+      grid-template-rows: repeat(16, auto)
+    //height: 3170px
+
+    &__card
+      &-1
+        grid-row: 1 / 5
+        grid-column: 1 / 2
+        height: auto
+
+      &-2
+        grid-row: 5 / 7
+        grid-column: 1 / 2
+
+      &-3
+        grid-row: 7 / 9
+        grid-column: 1 / 2
+
+      &-4
+        grid-row: 9 / 10
+        grid-column: 1 / 2
+
+      &-5
+        grid-row: 10 / 11
+        grid-column: 1 / 2
+
+      &-6
+        grid-row: 11 / 12
+        grid-column: 1 / 2
+
+      &-7
+        grid-row: 12 / 13
+        grid-column: 1 / 2
+
+      &-download
+        grid-row: 13 / 14
+        grid-column: 1 / 2
+
+      &-tag
+        grid-row: 14 / 15
+        grid-column: 1 / 2
+
+      &-social-network
+        grid-row: 15 / 16
+        grid-column: 1 / 2
+
+    &__content-1
+      flex-direction: column-reverse
+
+      &-text
+        padding-bottom: 10px
+    //&__text-1
+    //  display: none
+    &__image-1
+      margin-bottom: 0
+      border-radius: 0 10px 0 0
+
+    &__subtitle-1
+      margin-top: 0
+
+    &__title-1
+      padding-right: 10px
+
+    &__description-1
+      padding-right: 10px
+  .news
+    &-title
+      font-size: 30px
+      line-height: 40px
+
+  .list
+    &__item
+      flex-direction: column
+
+    &__image
+      width: 100%
+
+    &__content
+      padding-left: 0
+      margin-top: 25px
+
+  .table
+    &__right
+      flex-direction: column
+
+    &__bottom
+      flex-direction: row
+
+    &-career
+      margin-right: 0
+      margin-bottom: 30px
+
+    &__card-1
+      margin-right: 30px
+
+  .footer
+    &__bottom
+      &-ul
+        flex-direction: column
+        min-width: auto
+
+      &-item
+        margin-bottom: 15px
+
+      &-item:nth-child(4)
+        margin-bottom: 0
+
+      &-left
+        align-items: flex-start
+
+  .start-screen
+    &__wrapper
+      max-width: none
+      width: 88%
+
+    &__title
+      font-size: 32px
+      line-height: 50px
+
+    &__description
+      font-size: 16px
+      line-height: 28px
+  .articles
+    &-material
+      &__content
+        flex-direction: column
+
+      &__image
+        margin-right: 0
+        margin-bottom: 15px
+  .photo
+    &-slider
+      &__button
+        width: 45px
+        height: 45px
+        border-radius: 50%
+        top: 190px
+
+      &__image
+        height: 400px
+  .comments
+    &__top
+      &-title
+        &-text
+          font-size: 30px
+          line-height: 35px
+
+        &-amount
+          font-size: 30px
+          line-height: 35px
+
+    &__description
+      font-size: 15px
+      line-height: 25px
+
+@media (max-width: 576px)
+  .logo
+    width: 100px
+    margin-left: 10px
+
+    &-dark
+      width: 100px
+      height: 24px
+      margin-left: 10px
+
+      &__image
+        width: 24px
+        height: 24px
+        margin-right: 5px
+
+        &-text
+          height: 11px
+  .navbar
+    &-menu
+      &--visible
+        flex-direction: column
+        height: 230px
+
+      &__item
+        margin-right: 0
+        margin-bottom: 10px
+
+  .button-feedback
+    padding: 10px 12px
+
+  .main-screen
+    &__title
+      font-size: 30px
+      line-height: 32px
+
+    &__wrapper
+      margin-left: 25px
+
+  .popular
+    &__article
+      &__content
+        width: 100%
+
+  .news
+    &-title
+      font-size: 25px
+
+  .table
+    &__bottom
+      flex-direction: column
+
+    &__card-1
+      margin-right: 0
+      margin-bottom: 30px
+
+    &-slider
+      &__title
+        font-size: 35px
+        line-height: 45px
+
+  .contact-form
+    &__input
+      width: 250px
+
+    &__flex-error
+      max-width: 260px
+
+    &__title
+      font-size: 35px
+      line-height: 40px
+
+  .footer
+    &__grid
+      grid-template-columns: repeat(2, 1fr)
+      grid-template-rows: repeat(3, auto)
+      row-gap: 20px
+
+  .start-screen
+    &__title
+      font-size: 28px
+      line-height: 40px
+
+    &__description
+      font-size: 14px
+      line-height: 25px
+
+    &__icon
+      &-bookmark
+        left: 0
+        top: -40px
+
+  .photo-slider
+    &__bottom
+      flex-direction: column
+      align-items: flex-start
+
+      &-info
+        padding-bottom: 7px
+
+    &__line-vertical
+      display: none
+
+    &__button
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      top: 160px
+
+      &-prev
+        left: 20px
+
+      &-next
+        right: 20px
+
+    &__image
+      height: 300px
+
+
+  .articles
+    &__tags
+      flex-wrap: wrap
+
+  .other
+    grid-template-columns: repeat(1, 1fr)
+    grid-template-rows: repeat(4, auto)
+
+  .comments
+    &__content
+      &-top-2
+        flex-direction: column
+        align-items: flex-start
+
+    &__top
+      flex-direction: column
+      align-items: flex-start
+
+      &-title
+        margin-bottom: 20px
+
+    &-textarea
+      //min-height: 310px
+      &__message
+        min-height: 110px
+//#comment-error
+//  left: 135px
+//  top: 186px
+@media (max-width: 480px)
+  .main-screen
+    &__author
+      margin-bottom: 50px
+
+  .grid
+    &__content
+      &-1
+        padding: 0 0 0 25px
+
+    &__bottom
+      &-1
+        padding: 12px 10px 12px 25px
+
+  .table
+    &-slider
+      &__title
+        font-size: 30px
+        line-height: 40px
+
+  .contact-form
+    &__input
+      margin-bottom: 20px
+
+    &__form
+      flex-direction: column
+      align-items: center
+
+    &__title
+      font-size: 30px
+      line-height: 40px
+
+  .start-screen
+    &__title
+      font-size: 25px
+      line-height: 35px
+
+    &__top
+      flex-direction: column-reverse
+      align-items: flex-start
+      margin-bottom: 50px
+
+      &-left
+        margin-bottom: 20px
+
+    &__text
+      &-home
+        display: none
+
+    &__icon
+      &-home
+        margin-right: 15px
+
+      &-bookmark
+        left: 74px
+        top: -70px
+
+    &__description
+      margin-bottom: 25px
+
+    &__wrapper
+      padding: 35px 0 73px 0
+
+  .repost
+    &-button
+      flex-wrap: wrap
+
+      &__button
+        margin-bottom: 20px
+
+  .comments
+    &__top
+      flex-direction: column
+      align-items: flex-start
+
+      &-title
+        margin-bottom: 20px
+
+    &-textarea
+      //min-height: 310px
+      &__message
+        min-height: 90px
+
+      &__button
+        margin-left: 0
+
+        &__text
+          margin-right: 0
+
+        &__image
+          display: none
+
+      &__title
+        font-size: 15px
+
+      &__avatar
+        display: none
+
+    &__wrapper
+      padding: 30px 20px 35px 15px
+
+    &__avatar
+      width: 45px
+      height: 45px
+
+    &__item-2
+      margin-left: 60px
+
+
+
+
+
